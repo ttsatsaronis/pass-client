@@ -24,7 +24,6 @@ export class HeaderComponent implements OnInit{
 
   onBurgerMenu(){
     this.burgerMenu = !this.burgerMenu;
-    console.log('dsadas');
   }
 
 }

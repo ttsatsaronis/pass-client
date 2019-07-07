@@ -17,11 +17,17 @@
     <img src="https://res.cloudinary.com/pass-app/image/upload/v1562419816/pass%20app/global/pass-logo_kbgfah.jpg" class="logo">
     <img src="https://res.cloudinary.com/pass-app/image/upload/v1562419816/pass%20app/global/pass-logo_kbgfah.jpg" class="icon" (click)="onBurgerMenu()">
 
-    <nav *ngIf="burgerMenu" class="burgerMenuu">
-      <div class="menuItem" *ngFor="let item of headerItems">
-        <span class="label">{{item.label}}</span>
+    <div class="burgerMenu" *ngIf="burgerMenu">
+      <div class="closeContainer">
+        <img src="https://res.cloudinary.com/pass-app/image/upload/v1562540770/pass%20app/global/close_xix5lt.png" class="icon" (click)="onBurgerMenu()">
       </div>
-    </nav>
+      <div class="mobileMenuItem" *ngFor="let item of headerItems">
+        <span class="mobileLabel">{{item.label}}</span>
+      </div>
+      <div class="mobileMenuItem">
+        <span class="mobileLabel">MY BOOKINGS</span>
+      </div>
+    </div>
 
   </div>
 
