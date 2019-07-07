@@ -1,0 +1,66 @@
+@import '../styles-variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-height: 600px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  cursor: default;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 92px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+
+.filterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownSection {
+  padding-right: 16px;
+}
+
+.header {
+  font-size: 40px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+
+.sub-header {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+
+.image {
+  width: 100%;
+}

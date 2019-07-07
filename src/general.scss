@@ -1,0 +1,31 @@
+@import './app/styles-variables';
+
+.gutters {
+  width: 1200px;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  @media (max-width: map-get($grid-breakpoints, xl)) {
+    width: 100%;
+  }
+}
+
+.primaryButton {
+  display: block;
+  height: 40px;
+  width: 160px;
+  min-width: 160px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: #EDF060;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  font-weight: bold;
+}
+
+.primaryButton:active {
+  transform: translateY(2px);
+}

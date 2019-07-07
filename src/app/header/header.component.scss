@@ -1,0 +1,81 @@
+@import '../styles-variables';
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #202C39;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    height: 60px;
+  }
+}
+
+.desktopContainer {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+
+.mobileContainer {
+  display: none;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  padding-left: 10%;
+  margin-right: auto;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.label {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.logo {
+  width: 74px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burgerMenuu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #FFFFFF;
+  // list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}

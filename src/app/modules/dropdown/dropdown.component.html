@@ -1,0 +1,13 @@
+<div class="container" tabindex="-1"  (blur)="onBlur()">
+  <div class="selectContainer" (click)="onExpand()">
+    <span class="title">{{title}}</span>
+    <img *ngIf="!open" src="https://res.cloudinary.com/pass-app/image/upload/v1562445026/pass%20app/global/arrow-down_f80r8d.svg" class="icon">
+    <img *ngIf="open" src="https://res.cloudinary.com/pass-app/image/upload/v1562448158/pass%20app/global/facebook_slycqa.svg" class="icon">
+  </div>
+
+  <div *ngIf="open" class="expandContainer">
+    <div *ngFor="let item of selectItems" class="optionContainer" (click)="onSelect(item.label)">
+      <span class="title">{{item.label}}</span>
+    </div>
+  </div>
+</div>
