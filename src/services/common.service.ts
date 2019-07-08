@@ -8,11 +8,11 @@ import { map } from 'rxjs/operators';
 
 
 @Injectable()
-export class SystemLibraryService {
+export class CommonService {
 
     constructor(private http: HttpClient) { }
 
-    fetchIcons(request: GenericRequest) {
+    fetchLookup(request: GenericRequest) {
         return this.http.post(serverURL + authURL + '/common/fetch-lookup',
             request, { observe: 'response' })
             .pipe(map(response => response.body))
