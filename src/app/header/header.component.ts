@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import header from './header.js';
 
 @Component({
   selector: 'header',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
 
   burgerMenu: boolean = false;
+  config: Object;
 
   headerItems = [
     {
@@ -19,7 +21,7 @@ export class HeaderComponent implements OnInit{
   ]
 
   ngOnInit() {
-
+    this.config = header.config;
   }
 
   onBurgerMenu(){
