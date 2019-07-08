@@ -6,16 +6,16 @@ import header from './header.js';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss', '../../general.scss']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
 
   burgerMenu: boolean = false;
-  config: Object;
+  config: any;
 
   ngOnInit() {
     this.config = header.config;
   }
 
-  onBurgerMenu(){
+  onBurgerMenu() {
     this.burgerMenu = !this.burgerMenu;
   }
 
