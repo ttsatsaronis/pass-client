@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CommonService } from '../../services/common.service';
-import { GenericRequest } from '../../transport/generic.request';
+import { CommonService } from '../../../services/common.service';
+import { GenericRequest } from '../../../transport/generic.request';
 
 @Component({
   selector: 'carousel',
