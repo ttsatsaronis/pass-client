@@ -6,7 +6,7 @@ import { GenericRequest } from '../../transport/generic.request';
   selector: 'carousel',
   providers: [CommonService],
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss', '../globalStyling.scss']
+  styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit{
 

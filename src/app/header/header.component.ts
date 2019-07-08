@@ -5,7 +5,7 @@ import header from './header.js';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss', '../globalStyling.scss']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 

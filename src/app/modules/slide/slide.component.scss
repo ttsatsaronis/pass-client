@@ -85,26 +85,27 @@
 
 .headerText {
   font-size: 32px;
-  font-family: sans-serif;
+  font-family: firaSansBold;
   color: #FFFFFF;
   cursor: default;
 }
 
 .eventLabel {
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: firaSansBold;
   color: #FFFFFF;
 }
 
 .nightClubLabel {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: firaSansLight;
   color: #FFFFFF;
 }
 
 .viewAllLabel {
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: firaSansMedium;
+  text-decoration: underline;
   color: $primaryColour;
   cursor: pointer;
 }
