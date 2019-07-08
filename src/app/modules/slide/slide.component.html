@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="gutters">
+    <div class="titleContainer">
+      <span class="headerText">{{headerText}}</span>
+      <span class="viewAllLabel">{{config.labels.viewAllLabel}}</span>
+    </div>
+    <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
+      <div *ngFor="let item of config.items" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">
+        <div class="imageContainer">
+          <img [src]="item.image" class="image">
+        </div>
+        <div class="labelContainer">
+          <span class="eventLabel">{{item.event}}</span>
+          <span class="nightClubLabel">{{item.nightCenter}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
