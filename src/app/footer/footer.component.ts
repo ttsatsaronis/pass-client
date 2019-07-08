@@ -1,26 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import globalStyling from '../globalStyling.js';
+import footer from './footer.js';
 
 @Component({
   selector: 'footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss', '../../general.scss']
+  styleUrls: ['./footer.component.scss', '../globalStyling.scss']
 })
 export class FooterComponent implements OnInit{
 
-  headerItems = [
-    {
-      label: 'HOME'
-    },
-    {
-      label: 'LOGIN / SIGN UP'
-    },
-    {
-      label: 'CONTACT US'
-    }
-  ]
+  config: Object;
+  globalStyling: Object;
 
   ngOnInit() {
-
+    this.config = footer.config;
+    this.globalStyling = globalStyling.config;
   }
 
 }

@@ -1,3 +1,5 @@
+@import '../../styles-variables';
+
 .container {
   display: flex;
   justify-content: center;
@@ -9,6 +11,7 @@
   box-sizing: border-box;
   border-radius: 2px;
   cursor: pointer;
+  outline: none;
 }
 
 .selectContainer {
@@ -36,7 +39,7 @@
   border-radius: 2px;
   cursor: default;
   overflow-y: auto;
-  border: 1px solid #202C39;
+  border: 1px solid $lightGrey;
 }
 
 .expandContainer::-webkit-scrollbar {
@@ -44,11 +47,11 @@
 }
 
 .expandContainer::-webkit-scrollbar-track {
-  background: #020100;
+  background: $lightGrey;
 }
 
 .expandContainer::-webkit-scrollbar-thumb {
-  background: #EDF060;
+  background: $primaryColour;
   border-radius: 50px;
 }
 
@@ -62,13 +65,13 @@
   background-color: #FFFFFF;
   box-sizing: border-box;
   cursor: pointer;
-  border-bottom: 1px solid #202C39;
+  border-bottom: 1px solid $lightGrey;
   &:last-child {
     border-bottom: none;
   }
   &:hover {
     cursor: pointer;
-    background-color: #f8f8f8;
+    background-color: $lightGrey;
   }
 }
 
