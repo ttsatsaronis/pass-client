@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { serverURL, authURL } from 'src/transport/helper/url.helper';
 import { GenericRequest } from 'src/transport/generic.request';
 import { IList } from 'src/transport/helper/list.response';
+import { map } from 'rxjs/operators';
 
 
 
@@ -11,10 +12,10 @@ export class SystemLibraryService {
 
     constructor(private http: HttpClient) { }
 
-    // fetchIcons(request: GenericRequest) {
-    //     return this.http.post(serverURL + authURL + '/common/fetch-lookup',
-    //         request, { observe: 'response' })
-    //         .map(response => response.body)
-    //         .map((res: IList) => res as IList);
-    // }
+    fetchIcons(request: GenericRequest) {
+        return this.http.post(serverURL + authURL + '/common/fetch-lookup',
+            request, { observe: 'response' })
+            .pipe(map(response => response.body))
+            .pipe(map((res: IList) => res as IList));
+    }
 }
