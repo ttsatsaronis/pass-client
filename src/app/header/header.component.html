@@ -2,26 +2,32 @@
 <div class="headerContainer">
 
   <div class="desktopContainer gutters">
-    <img src="https://res.cloudinary.com/pass-app/image/upload/v1562419816/pass%20app/global/pass-logo_kbgfah.jpg" class="logo">
+    <img [src]="config.logoIcon" class="logo">
     <div class="menuContainer in-gutters">
-      <div class="menuItem" *ngFor="let item of headerItems">
+      <div class="menuItem" *ngFor="let item of config.items">
         <span class="label">{{item.label}}</span>
       </div>
     </div>
     <div class="menuItem">
-      <span class="label">MY BOOKINGS</span>
+      <span class="label">{{config.bookingLabel}}</span>
     </div>
   </div>
 
   <div class="mobileContainer gutters">
-    <img src="https://res.cloudinary.com/pass-app/image/upload/v1562419816/pass%20app/global/pass-logo_kbgfah.jpg" class="logo">
-    <img src="https://res.cloudinary.com/pass-app/image/upload/v1562419816/pass%20app/global/pass-logo_kbgfah.jpg" class="icon" (click)="onBurgerMenu()">
+    <img [src]="config.logoIcon" class="logo">
+    <img [src]="config.burgerMenuIcon" class="icon" (click)="onBurgerMenu()">
 
-    <nav *ngIf="burgerMenu" class="burgerMenuu">
-      <div class="menuItem" *ngFor="let item of headerItems">
-        <span class="label">{{item.label}}</span>
+    <div class="burgerMenu" *ngIf="burgerMenu">
+      <div class="closeContainer">
+        <img [src]="config.closeIcon" class="icon" (click)="onBurgerMenu()">
       </div>
-    </nav>
+      <div class="mobileMenuItem" *ngFor="let item of config.items">
+        <span class="mobileLabel">{{item.label}}</span>
+      </div>
+      <div class="mobileMenuItem">
+        <span class="mobileLabel">{{config.bookingLabel}}</span>
+      </div>
+    </div>
 
   </div>
 

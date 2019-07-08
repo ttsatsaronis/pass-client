@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import header from './header.js';
 
 @Component({
   selector: 'header',
@@ -8,23 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
 
   burgerMenu: boolean = false;
-
-  headerItems = [
-    {
-      label: 'DISCOVER'
-    },
-    {
-      label: 'PLACES'
-    }
-  ]
+  config: Object;
 
   ngOnInit() {
-
+    this.config = header.config;
   }
 
   onBurgerMenu(){
     this.burgerMenu = !this.burgerMenu;
-    console.log('dsadas');
   }
 
 }
