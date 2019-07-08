@@ -1,4 +1,4 @@
-@import './app/styles-variables';
+@import './styles-variables';
 
 .gutters {
   width: 1200px;
@@ -17,9 +17,10 @@
   min-width: 160px;
   border-radius: 50px;
   font-size: 16px;
-  background-color: #EDF060;
+  background-color: $primaryColour;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .primaryButton:hover {

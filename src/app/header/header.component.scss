@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid #202C39;
+  border-bottom: 1px solid $darkGrey;
 
   @media (max-width: map-get($grid-breakpoints, md)) {
     height: 60px;
@@ -85,12 +85,12 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  border-bottom: 1px solid #202C39;
+  border-bottom: 1px solid $darkGrey;
 }
 
 .mobileLabel {
   font-size: 16px;
   font-family: sans-serif;
-  color: #202C39;
+  color: $darkGrey;
   cursor: pointer;
 }
