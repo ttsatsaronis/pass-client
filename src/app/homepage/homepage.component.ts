@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import homepage from './homepage.js'
 
 @Component({
   selector: 'homepage',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-  title = 'pass';
+
+  config: any;
+
+  ngOnInit() {
+    this.config = homepage.config;
+  }
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonService } from '../../services/common.service';
 import { GenericRequest } from '../../transport/generic.request';
 
@@ -8,7 +8,10 @@ import { GenericRequest } from '../../transport/generic.request';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
+
 export class CarouselComponent implements OnInit{
+  @Input() headerText: string;
+  @Input() subHeaderText: string;
 
   constructor(
     private commonService: CommonService,

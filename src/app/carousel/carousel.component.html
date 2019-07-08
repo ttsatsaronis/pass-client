@@ -4,8 +4,8 @@
     <img src="https://res.cloudinary.com/pass-app/image/upload/v1562456047/pass%20app/homepage/athens-by-night_utcu4f.jpg" class="image">
   </div>
   <div class="labelContainer">
-    <span class="header">Discover Athens Nightlife</span>
-    <span class="sub-header">100s of Clubs, Bars and Live Venues available</span>
+    <span *ngIf="headerText" class="header">{{headerText}}</span>
+    <span *ngIf="subHeaderText" class="sub-header">{{subHeaderText}}</span>
   </div>
   <div class="searchContainer">
     <div class="filterSection">
