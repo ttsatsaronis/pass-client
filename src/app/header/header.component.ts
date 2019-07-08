@@ -11,15 +11,6 @@ export class HeaderComponent implements OnInit{
   burgerMenu: boolean = false;
   config: Object;
 
-  headerItems = [
-    {
-      label: 'DISCOVER'
-    },
-    {
-      label: 'PLACES'
-    }
-  ]
-
   ngOnInit() {
     this.config = header.config;
   }
