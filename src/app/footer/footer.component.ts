@@ -9,8 +9,8 @@ import footer from './footer.js';
 })
 export class FooterComponent implements OnInit{
 
-  config: Object;
-  globalStyling: Object;
+  config: any;
+  globalStyling: any;
 
   ngOnInit() {
     this.config = footer.config;

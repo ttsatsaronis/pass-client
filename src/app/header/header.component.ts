@@ -10,8 +10,8 @@ import header from './header.js';
 export class HeaderComponent implements OnInit {
 
   burgerMenu: boolean = false;
-  config: Object;
-  globalStyling: Object;
+  config: any;
+  globalStyling: any;
 
   ngOnInit() {
     this.config = header.config;
