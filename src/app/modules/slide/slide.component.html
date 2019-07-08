@@ -6,13 +6,7 @@
     </div>
     <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
       <div *ngFor="let item of config.items" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">
-        <div class="imageContainer">
-          <img [src]="item.image" class="image">
-        </div>
-        <div class="labelContainer">
-          <span class="eventLabel">{{item.event}}</span>
-          <span class="nightClubLabel">{{item.nightCenter}}</span>
-        </div>
+        <gridTile [item]=item></gridTile>
       </div>
     </div>
   </div>

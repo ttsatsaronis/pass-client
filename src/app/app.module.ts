@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StoreComponent } from './footer/store.component';
 import { DropdownComponent } from './modules/dropdown/dropdown.component';
 import { SlideComponent } from './modules/slide/slide.component';
+import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SlideComponent } from './modules/slide/slide.component';
     CarouselComponent,
     DropdownComponent,
     SlideComponent,
+    GridTileComponent,
   ],
   imports: [
     HttpClientModule,
