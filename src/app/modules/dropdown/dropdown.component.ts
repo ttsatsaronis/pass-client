@@ -1,19 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.scss']
 })
-export class DropdownComponent implements OnInit{
+export class DropdownComponent {
 
   @Input() menu: any;
   selectedItem: string;
 
   open: boolean = false;
-
-  ngOnInit() {
-  }
 
   onExpand(){
     this.open = !this.open;

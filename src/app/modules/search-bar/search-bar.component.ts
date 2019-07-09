@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonService } from '../../../services/common.service';
 import { GenericRequest } from '../../../transport/generic.request';
 
@@ -9,7 +9,7 @@ import { GenericRequest } from '../../../transport/generic.request';
   styleUrls: ['./search-bar.component.scss']
 })
 
-export class SearchBarComponent implements OnInit {
+export class SearchBarComponent {
 
   nightCenterTypes: any;
   musicKinds: any;
@@ -23,13 +23,7 @@ export class SearchBarComponent implements OnInit {
       this.onArtists();
     }
 
-  ngOnInit() {
-
-
-  }
-
   onSearch() {
-
   }
 
   onNightCenterTypes(){
