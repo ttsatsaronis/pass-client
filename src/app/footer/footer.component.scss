@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 160px;
+
   border-top: 1px solid $darkGrey;
 }
 
@@ -13,9 +13,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 160px;
   @media (max-width: map-get($grid-breakpoints, md)) {
     display: none;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialSection {
+  display: flex;
+}
+
+.social {
+  width: 24px;
+  height: 24px;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+  &:last-child {
+    margin: 8px 0 0 0;
   }
 }
 
@@ -62,6 +81,7 @@
   display: flex;
   justify-content: space-between;
   width: 270px;
+  padding: 8px;
 }
 
 .logo {

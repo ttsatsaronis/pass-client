@@ -35,7 +35,6 @@
   display: flex;
   flex-direction: column;
   width: 23%;
-  padding: 0 0 16px 0;
   cursor: pointer;
 
   @media (max-width: map-get($grid-breakpoints, md)) {
@@ -50,7 +49,6 @@
   display: flex;
   flex-direction: column;
   width: 23%;
-  padding: 0 0 16px 0;
   cursor: pointer;
   &:last-child {
     padding-right: 0;
