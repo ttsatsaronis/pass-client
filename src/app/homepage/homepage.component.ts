@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import homepage from './homepage.js'
+import { Component, OnInit } from '@angular/core';
+import homepage from './homepage.js';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -8,7 +8,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent {
+export class HomepageComponent implements OnInit {
 
   config: any;
   deviceInfo: any;

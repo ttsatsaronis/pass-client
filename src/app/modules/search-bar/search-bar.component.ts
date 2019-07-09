@@ -9,27 +9,23 @@ import { GenericRequest } from '../../../transport/generic.request';
   styleUrls: ['./search-bar.component.scss']
 })
 
-export class SearchBarComponent implements OnInit{
+export class SearchBarComponent implements OnInit {
   @Input() headerText: string;
   @Input() subHeaderText: string;
 
   constructor(
     private commonService: CommonService,
-    ) {}
-
-  request = new GenericRequest();
+  ) { }
 
   ngOnInit() {
 
-    this.request.tableName = 'music_kinds';
-
-    this.commonService.fetchLookup(this.request)
+    this.commonService.fetchLookup(new GenericRequest('music_kinds'))
       .subscribe(res => {
-        console.log('dsadsadsa', res);
+        console.log('Lookup => ', res);
       });
-
   }
 
-  onSearch(){
+  onSearch() {
+
   }
 }

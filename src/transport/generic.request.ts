@@ -3,90 +3,95 @@ import { Sorting } from './helper/sorting.helper';
 
 export class GenericRequest {
 
-  private _id: number;
-  private _tableName: string;
-  private _active: boolean;
-  private _paging: Paging;
-  private _additionalSort: Array<Sorting>;
+  private id: number;
+  private tableName: string;
+  private active: boolean;
+  private paging: Paging;
+  private additionalSort: Array<Sorting>;
 
+  constructor(tableName?: string);
+
+  constructor(tableName: string) {
+    this.$tableName = tableName;
+  }
 
   /**
-   * Getter id
+   * Getter $id
    * @return {number}
    */
-  public get id(): number {
-    return this._id;
+  public get $id(): number {
+    return this.id;
   }
 
   /**
-   * Setter id
+   * Setter $id
    * @param {number} value
    */
-  public set id(value: number) {
-    this._id = value;
+  public set $id(value: number) {
+    this.id = value;
   }
 
   /**
-   * Getter tableName
+   * Getter $tableName
    * @return {string}
    */
-  public get tableName(): string {
-    return this._tableName;
+  public get $tableName(): string {
+    return this.tableName;
   }
 
   /**
-   * Setter tableName
+   * Setter $tableName
    * @param {string} value
    */
-  public set tableName(value: string) {
-    this._tableName = value;
+  public set $tableName(value: string) {
+    this.tableName = value;
   }
 
   /**
-   * Getter active
+   * Getter $active
    * @return {boolean}
    */
-  public get active(): boolean {
-    return this._active;
+  public get $active(): boolean {
+    return this.active;
   }
 
   /**
-   * Setter active
+   * Setter $active
    * @param {boolean} value
    */
-  public set active(value: boolean) {
-    this._active = value;
+  public set $active(value: boolean) {
+    this.active = value;
   }
 
   /**
-   * Getter paging
+   * Getter $paging
    * @return {Paging}
    */
-  public get paging(): Paging {
-    return this._paging;
+  public get $paging(): Paging {
+    return this.paging;
   }
 
   /**
-   * Setter paging
+   * Setter $paging
    * @param {Paging} value
    */
-  public set paging(value: Paging) {
-    this._paging = value;
+  public set $paging(value: Paging) {
+    this.paging = value;
   }
 
   /**
-   * Getter additionalSort
+   * Getter $additionalSort
    * @return {Array<Sorting>}
    */
-  public get additionalSort(): Array<Sorting> {
-    return this._additionalSort;
+  public get $additionalSort(): Array<Sorting> {
+    return this.additionalSort;
   }
 
   /**
-   * Setter additionalSort
+   * Setter $additionalSort
    * @param {Array<Sorting>} value
    */
-  public set additionalSort(value: Array<Sorting>) {
-    this._additionalSort = value;
+  public set $additionalSort(value: Array<Sorting>) {
+    this.additionalSort = value;
   }
 }

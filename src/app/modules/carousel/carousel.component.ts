@@ -9,7 +9,7 @@ import { GenericRequest } from '../../../transport/generic.request';
   styleUrls: ['./carousel.component.scss']
 })
 
-export class CarouselComponent implements OnInit{
+export class CarouselComponent implements OnInit {
   @Input() image: string;
   @Input() maxHeight: string;
   @Input() headerText: string;

@@ -1,91 +1,90 @@
 export class Paging {
 
-  private _pageSize: number = 20;
-  private _pageNumber: number = 1;
-  private _orderField: string;
-  private _orderDirection: string = "desc";
-  private _totalSize: number;
+  private pageSize: number = 20;
+  private pageNumber: number = 1;
+  private orderField: string;
+  private orderDirection: string = "desc";
+  private totalSize: number;
 
   constructor() { }
 
-
   /**
-   * Getter pageSize
+   * Getter $pageSize
    * @return {number }
    */
-  public get pageSize(): number {
-    return this._pageSize;
+  public get $pageSize(): number {
+    return this.pageSize;
   }
 
   /**
-   * Setter pageSize
+   * Setter $pageSize
    * @param {number } value
    */
-  public set pageSize(value: number) {
-    this._pageSize = value;
+  public set $pageSize(value: number) {
+    this.pageSize = value;
   }
 
   /**
-   * Getter pageNumber
+   * Getter $pageNumber
    * @return {number }
    */
-  public get pageNumber(): number {
-    return this._pageNumber;
+  public get $pageNumber(): number {
+    return this.pageNumber;
   }
 
   /**
-   * Setter pageNumber
+   * Setter $pageNumber
    * @param {number } value
    */
-  public set pageNumber(value: number) {
-    this._pageNumber = value;
+  public set $pageNumber(value: number) {
+    this.pageNumber = value;
   }
 
   /**
-   * Getter orderField
+   * Getter $orderField
    * @return {string}
    */
-  public get orderField(): string {
-    return this._orderField;
+  public get $orderField(): string {
+    return this.orderField;
   }
 
   /**
-   * Setter orderField
+   * Setter $orderField
    * @param {string} value
    */
-  public set orderField(value: string) {
-    this._orderField = value;
+  public set $orderField(value: string) {
+    this.orderField = value;
   }
 
   /**
-   * Getter orderDirection
+   * Getter $orderDirection
    * @return {string }
    */
-  public get orderDirection(): string {
-    return this._orderDirection;
+  public get $orderDirection(): string {
+    return this.orderDirection;
   }
 
   /**
-   * Setter orderDirection
+   * Setter $orderDirection
    * @param {string } value
    */
-  public set orderDirection(value: string) {
-    this._orderDirection = value;
+  public set $orderDirection(value: string) {
+    this.orderDirection = value;
   }
 
   /**
-   * Getter totalSize
+   * Getter $totalSize
    * @return {number}
    */
-  public get totalSize(): number {
-    return this._totalSize;
+  public get $totalSize(): number {
+    return this.totalSize;
   }
 
   /**
-   * Setter totalSize
+   * Setter $totalSize
    * @param {number} value
    */
-  public set totalSize(value: number) {
-    this._totalSize = value;
+  public set $totalSize(value: number) {
+    this.totalSize = value;
   }
 }

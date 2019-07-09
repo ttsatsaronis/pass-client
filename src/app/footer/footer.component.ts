@@ -7,7 +7,7 @@ import footer from './footer.js';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit{
+export class FooterComponent implements OnInit {
 
   config: any;
   globalStyling: any;
