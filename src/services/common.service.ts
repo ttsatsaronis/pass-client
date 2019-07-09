@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { serverURL, authURL } from 'src/transport/helper/url.helper';
 import { GenericRequest } from 'src/transport/generic.request';
 import { IList } from 'src/transport/helper/list.response';
 import { map } from 'rxjs/operators';
+import { serverURL, authURL } from 'src/transport/helper/url.helper';
 
 
 
