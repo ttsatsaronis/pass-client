@@ -2,10 +2,10 @@
   <div class="gutters">
     <div class="titleContainer">
       <span class="headerText">{{headerText}}</span>
-      <span class="viewAllLabel">{{config.labels.viewAllLabel}}</span>
+      <span *ngIf="labels" class="viewAllLabel">{{labels.slideViewAllLabel}}</span>
     </div>
     <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
-      <div *ngFor="let item of config.items" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">
+      <div *ngFor="let item of results" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">
         <gridTile [item]=item></gridTile>
       </div>
     </div>
