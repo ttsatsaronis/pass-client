@@ -1,6 +1,12 @@
 
 <header></header>
-<carousel [headerText]="config.labels.carouselHeader" [subHeaderText]="config.labels.carouselSubHeader"></carousel>
+<carousel
+  [headerText]="config.labels.carouselHeader"
+  [subHeaderText]="config.labels.carouselSubHeader"
+  [image]="config.imageCarousel"
+  [maxHeight]="config.imageCarouselMaxHeight"
+  [searchBar]=config.showSearchBar>
+</carousel>
 <slide [headerText]="config.labels.firstSlideHeader" scrollOnMobile=true></slide>
 <slide [headerText]="config.labels.secondSlideHeader"></slide>
 <footer></footer>

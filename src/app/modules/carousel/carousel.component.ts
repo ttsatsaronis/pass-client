@@ -10,26 +10,14 @@ import { GenericRequest } from '../../../transport/generic.request';
 })
 
 export class CarouselComponent implements OnInit{
+  @Input() image: string;
+  @Input() maxHeight: string;
   @Input() headerText: string;
   @Input() subHeaderText: string;
-
-  constructor(
-    private commonService: CommonService,
-    ) {}
-
-  request = new GenericRequest();
+  @Input() searchBar: boolean;
 
   ngOnInit() {
 
-    this.request.tableName = 'music_kinds';
-
-    this.commonService.fetchLookup(this.request)
-      .subscribe(res => {
-        console.log('dsadsadsa', res);
-      });
-
   }
 
-  onSearch(){
-  }
 }
