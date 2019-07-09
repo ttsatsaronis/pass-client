@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 
+import { DeviceDetectorModule } from 'ngx-device-detector';
+
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,6 +29,8 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
     GridTileComponent,
   ],
   imports: [
+    DeviceDetectorModule.forRoot(),
+
     HttpClientModule,
     BrowserModule,
     AppRoutingModule
