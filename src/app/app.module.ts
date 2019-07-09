@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { DeviceDetectorModule } from 'ngx-device-detector';
 
+import { GenericComponent } from './generic.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +22,7 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
     FooterComponent,
     HomepageComponent,
 
+// GenericComponent,
     StoreComponent,
     CarouselComponent,
     SearchBarComponent,

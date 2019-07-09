@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import globalStyling from '../globalStyling.js';
+import { GenericComponent } from '../generic.component';
 import footer from './footer.js';
 
 @Component({
@@ -7,9 +8,8 @@ import footer from './footer.js';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent extends GenericComponent implements OnInit {
 
-  config: any;
   globalStyling: any;
 
   ngOnInit() {

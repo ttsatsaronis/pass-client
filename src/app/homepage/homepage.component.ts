@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from 'src/services/event.service.js';
 import { EventRequest } from 'src/transport/helper/event.request.js';
+import { GenericComponent } from '../generic.component';
 import homepage from './homepage.js';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
@@ -11,16 +12,16 @@ import { DeviceDetectorService } from 'ngx-device-detector';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent implements OnInit {
+export class HomepageComponent extends GenericComponent implements OnInit {
 
-  config: any;
   deviceInfo: any;
   results: any;
 
   constructor(
     private deviceService: DeviceDetectorService,
-    private eventService: EventService,
+    private eventService: EventService
     ) {
+      super();
       this.epicFunction();
     }
 
