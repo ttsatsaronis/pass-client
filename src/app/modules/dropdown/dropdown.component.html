@@ -1,13 +1,13 @@
 <div class="container" tabindex="-1" (blur)="onBlur()">
   <div class="selectContainer" (click)="onExpand()">
-    <span class="title">{{title}}</span>
+    <span class="title">{{selectedItem || menu[0].name}}</span>
     <img *ngIf="!open" src="https://res.cloudinary.com/pass-app/image/upload/v1562445026/pass%20app/global/arrow-down_f80r8d.svg" class="icon">
     <img *ngIf="open" src="https://res.cloudinary.com/pass-app/image/upload/v1562670676/pass%20app/global/arrow-up_uy6r8s.svg" class="icon">
   </div>
 
   <div *ngIf="open" class="expandContainer">
-    <div *ngFor="let item of selectItems" class="optionContainer" (click)="onSelect(item.label)">
-      <span class="title">{{item.label}}</span>
+    <div *ngFor="let item of menu" class="optionContainer" (click)="onSelect(item.name)">
+      <span class="title">{{item.name}}</span>
     </div>
   </div>
 </div>

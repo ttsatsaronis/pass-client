@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'dropdown',
@@ -7,24 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownComponent implements OnInit{
 
-  open: boolean = false;
-  title: string;
+  @Input() menu: any;
+  selectedItem: string;
 
-  selectItems = [
-    {
-      label: 'item1'
-    },
-    {
-      label: 'item2'
-    },
-    {
-      label: 'item3'
-    }
-  ]
+  open: boolean = false;
 
   ngOnInit() {
-    this.title='select';
-
   }
 
   onExpand(){
@@ -33,13 +21,12 @@ export class DropdownComponent implements OnInit{
 
   onSelect(item: string){
     this.open = !this.open;
-    this.title = item;
+    this.selectedItem = item;
   }
 
   onBlur(){
     if (this.open) {
       this.open = false;
-      console.log('dsadsadasd')
     }
   }
 

@@ -1,13 +1,13 @@
 <div class="searchContainer">
   <div class="filterSection">
     <div class="dropdownSection">
-      <dropdown></dropdown>
+      <dropdown *ngIf="nightCenterTypes" [menu]="nightCenterTypes"></dropdown>
     </div>
     <div class="dropdownSection">
-      <dropdown></dropdown>
+      <dropdown *ngIf="musicKinds" [menu]="musicKinds"></dropdown>
     </div>
     <div class="dropdownSection">
-      <dropdown></dropdown>
+      <dropdown *ngIf="artists" [menu]="artists"></dropdown>
     </div>
     <button class="primaryButton" (click)="onSearch()">Search Now</button>
   </div>
