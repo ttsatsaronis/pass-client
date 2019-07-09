@@ -1,55 +1,56 @@
 export class Sorting {
-  private _field: string;
-  private _direction: string = 'asc';
-  private _active: boolean = true;
+  private field: string;
+  private direction: string = 'asc';
+  private active: boolean = true;
 
   constructor() { }
 
   /**
-   * Getter field
+   * Getter $field
    * @return {string}
    */
-  public get field(): string {
-    return this._field;
+  public get $field(): string {
+    return this.field;
   }
 
   /**
-   * Setter field
+   * Setter $field
    * @param {string} value
    */
-  public set field(value: string) {
-    this._field = value;
+  public set $field(value: string) {
+    this.field = value;
   }
 
   /**
-   * Getter direction
+   * Getter $direction
    * @return {string }
    */
-  public get direction(): string {
-    return this._direction;
+  public get $direction(): string {
+    return this.direction;
   }
 
   /**
-   * Setter direction
+   * Setter $direction
    * @param {string } value
    */
-  public set direction(value: string) {
-    this._direction = value;
+  public set $direction(value: string) {
+    this.direction = value;
   }
 
   /**
-   * Getter active
+   * Getter $active
    * @return {boolean }
    */
-  public get active(): boolean {
-    return this._active;
+  public get $active(): boolean {
+    return this.active;
   }
 
   /**
-   * Setter active
+   * Setter $active
    * @param {boolean } value
    */
-  public set active(value: boolean) {
-    this._active = value;
+  public set $active(value: boolean) {
+    this.active = value;
   }
+
 }

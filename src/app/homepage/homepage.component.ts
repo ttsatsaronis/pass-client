@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import homepage from './homepage.js'
+import { Component, OnInit } from '@angular/core';
+import homepage from './homepage.js';
 
 @Component({
   selector: 'homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent {
+export class HomepageComponent implements OnInit {
 
   config: any;
 

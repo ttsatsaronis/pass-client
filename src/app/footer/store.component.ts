@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './store.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class StoreComponent{
+export class StoreComponent {
 
 }
