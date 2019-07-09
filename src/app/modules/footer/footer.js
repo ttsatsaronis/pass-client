@@ -5,12 +5,15 @@ export default {
     items: [
       {
         label: 'HOME',
+        path: 'home',
       },
       {
         label: 'LOGIN / SIGN UP',
+        path: '',
       },
       {
-        label: 'CONTACT US'
+        label: 'CONTACT US',
+        path: '',
       },
     ],
     social: [
