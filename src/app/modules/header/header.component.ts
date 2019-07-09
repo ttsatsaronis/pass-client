@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 import globalStyling from '../../globalStyling.js';
 import { GenericComponent } from '../../generic.component';
 import header from './header.js';
@@ -12,6 +13,12 @@ export class HeaderComponent extends GenericComponent implements OnInit {
 
   burgerMenu: boolean = false;
 
+  constructor(
+    private router: Router,
+    ) {
+      super();
+    }
+
   ngOnInit() {
     this.config = header.config;
     this.globalStyling = globalStyling.config;
@@ -19,6 +26,10 @@ export class HeaderComponent extends GenericComponent implements OnInit {
 
   onBurgerMenu() {
     this.burgerMenu = !this.burgerMenu;
+  }
+
+  onNavigate(path: string) {
+    this.router.navigate(["/", path]);
   }
 
 }

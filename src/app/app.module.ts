@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
 import { DeviceDetectorModule } from 'ngx-device-detector';
-
 import { AppRoutingModule } from './app-routing.module';
+//pages
+import { PassComponent } from 'src/app/pass.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SearchResultsPageComponent } from './pages/searchResultsPage/search-results-page.component';
+//modules
 import { HeaderComponent } from './modules/header/header.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { CarouselComponent } from './modules/carousel/carousel.component';
@@ -17,10 +19,12 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
 
 @NgModule({
   declarations: [
+    PassComponent,
+    HomepageComponent,
+    SearchResultsPageComponent,
+
     HeaderComponent,
     FooterComponent,
-    HomepageComponent,
-
     StoreComponent,
     CarouselComponent,
     SearchBarComponent,
@@ -36,9 +40,6 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [
-    HomepageComponent,
-    HeaderComponent
-  ]
+  bootstrap: [ PassComponent ]
 })
 export class AppModule { }

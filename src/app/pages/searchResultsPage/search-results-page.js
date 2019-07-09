@@ -1,6 +1,6 @@
 export default {
-  id: 'homepage',
-  name: 'homepage',
+  id: 'SearchResultsPage',
+  name: 'SearchResultsPage',
   config: {
     labels: {
       carouselHeader: 'Discover Athens Nightlife',
