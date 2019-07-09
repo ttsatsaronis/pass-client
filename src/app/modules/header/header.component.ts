@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import globalStyling from '../globalStyling.js';
-import { GenericComponent } from '../generic.component';
+import globalStyling from '../../globalStyling.js';
+import { GenericComponent } from '../../generic.component';
 import header from './header.js';
 
 @Component({
