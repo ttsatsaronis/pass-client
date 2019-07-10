@@ -16,6 +16,7 @@ import { StoreComponent } from './modules/footer/store.component';
 import { DropdownComponent } from './modules/dropdown/dropdown.component';
 import { SlideComponent } from './modules/slide/slide.component';
 import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
+import { FiltersComponent } from './modules/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
     DropdownComponent,
     SlideComponent,
     GridTileComponent,
+    FiltersComponent,
   ],
   imports: [
     DeviceDetectorModule.forRoot(),

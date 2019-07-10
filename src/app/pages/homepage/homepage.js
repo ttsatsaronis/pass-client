@@ -12,5 +12,6 @@ export default {
     imageCarousel: 'https://res.cloudinary.com/pass-app/image/upload/v1562456047/pass%20app/homepage/athens-by-night_utcu4f.jpg',
     imageCarouselMaxHeight: '600px',
     showSearchBar: true,
+    dropdownWidth: '160px',
   },
 };

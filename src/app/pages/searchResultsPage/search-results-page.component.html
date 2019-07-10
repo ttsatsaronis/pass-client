@@ -1,3 +1,15 @@
 
 <header></header>
+<carousel
+  [headerText]="config.labels.carouselHeader"
+  [subHeaderText]="config.labels.carouselSubHeader"
+  [image]="config.imageCarousel"
+  [maxHeight]="config.imageCarouselMaxHeight"
+  [searchBar]=config.showSearchBar>
+</carousel>
+<div class="resultsContainer">
+  <div class="center gutters">
+    <filters></filters>
+  </div>
+</div>
 <footer></footer>

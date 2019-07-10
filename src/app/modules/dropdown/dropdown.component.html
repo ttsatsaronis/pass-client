@@ -1,4 +1,5 @@
-<div class="container" tabindex="-1" (blur)="onBlur()">
+<span *ngIf="header" class="sectionTitle">{{header}}</span>
+<div class="container"  tabindex="-1" (blur)="onBlur()" [ngStyle]="{'width': widthSize}">
   <div class="selectContainer" (click)="onExpand()">
     <span class="title">{{selectedItem || menu[0].name}}</span>
     <img *ngIf="!open" src="https://res.cloudinary.com/pass-app/image/upload/v1562445026/pass%20app/global/arrow-down_f80r8d.svg" class="icon">

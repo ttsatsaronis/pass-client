@@ -15,5 +15,4 @@ export class CarouselComponent {
   @Input() headerText: string;
   @Input() subHeaderText: string;
   @Input() searchBar: boolean;
-
 }

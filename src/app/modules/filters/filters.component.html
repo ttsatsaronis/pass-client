@@ -1,0 +1,6 @@
+<div class="container">
+  <span class="moduleTitle">{{config.labels.header}}</span>
+  <div class="filterSection">
+    <dropdown *ngIf="nightCenterTypes" [menu]="nightCenterTypes" [header]="'WHERE'"></dropdown>
+  </div>
+</div>

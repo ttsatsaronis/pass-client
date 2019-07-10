@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class DropdownComponent {
 
   @Input() menu: any;
+  @Input() header: string;
+  @Input() widthSize: string;
   selectedItem: string;
 
   open: boolean = false;

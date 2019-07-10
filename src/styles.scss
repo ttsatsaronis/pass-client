@@ -11,6 +11,7 @@
 @font-face { font-family: firaSansMedium; src: url(src/assets/font/FiraSans-Medium.ttf); }
 
 .gutters {
+  display: flex;
   width: 1200px;
   padding: 0 16px;
   box-sizing: border-box;
@@ -56,4 +57,20 @@
 
 .firaSansMedium {
   font-family: firaSansMedium;
+}
+
+.moduleTitle {
+  font-family: firaSansBold;
+  font-size: 18px;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.sectionTitle {
+  font-family: firaSansMedium;
+  font-size: 12px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+  cursor: default;
 }
