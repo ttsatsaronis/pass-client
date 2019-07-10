@@ -9,7 +9,7 @@ import { EventRequest } from 'src/transport/helper/event.request.js';
 })
 export class SlideComponent {
 
-  @Input() labels: any;
+  @Input() translations: any;
   @Input() headerText: string;
   @Input() scrollOnMobile: boolean = false;
   @Input() results: any;

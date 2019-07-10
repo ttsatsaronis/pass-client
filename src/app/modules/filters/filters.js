@@ -2,7 +2,7 @@ export default {
   id: 'Filters',
   name: 'Filters',
   config: {
-    labels: {
+    translations: {
       header: 'Filters',
     },
   },

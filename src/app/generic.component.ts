@@ -1,6 +1,7 @@
 export class GenericComponent {
 
 	config: any;
+  translations: any;
   globalStyling: any;
 
 	constructor() { }

@@ -1,12 +1,12 @@
 
 <header></header>
 <carousel
-  [headerText]="config.labels.carouselHeader"
-  [subHeaderText]="config.labels.carouselSubHeader"
+  [headerText]="translations.carouselHeader"
+  [subHeaderText]="translations.carouselSubHeader"
   [image]="config.imageCarousel"
   [maxHeight]="config.imageCarouselMaxHeight"
   [searchBar]=config.showSearchBar>
 </carousel>
-<slide [results]="results" [headerText]="config.labels.todaySlideHeader" [labels]="config.labels" scrollOnMobile=true></slide>
-<slide [results]="results" [headerText]="config.labels.weekSlideHeader" [labels]="config.labels"></slide>
+<slide [results]="results" [headerText]="translations.todaySlideHeader" [translations]="translations" scrollOnMobile=true></slide>
+<slide [results]="results" [headerText]="translations.weekSlideHeader" [translations]="translations"></slide>
 <footer></footer>

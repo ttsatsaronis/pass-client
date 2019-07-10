@@ -2,7 +2,7 @@
   <div class="column gutters">
     <div class="titleContainer">
       <span class="headerText">{{headerText}}</span>
-      <span *ngIf="labels" class="viewAllLabel">{{labels.slideViewAllLabel}}</span>
+      <span class="viewAllLabel">{{translations.slideViewAllLabel}}</span>
     </div>
     <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
       <div *ngFor="let item of results" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">

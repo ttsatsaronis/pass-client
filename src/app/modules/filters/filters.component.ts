@@ -26,7 +26,8 @@ export class FiltersComponent extends GenericComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.config = filters.config
+    this.config = filters.config;
+    this.translations = filters.config.translations;
   }
 
   onNightCenterTypes(){

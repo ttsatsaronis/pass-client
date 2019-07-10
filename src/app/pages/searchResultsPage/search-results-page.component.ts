@@ -23,6 +23,7 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
 
   ngOnInit() {
     this.config = searchResultsPage.config;
+    this.translations = searchResultsPage.config.translations;
 
     this.eventService.fetchEvents(new EventRequest())
     .subscribe(res => {

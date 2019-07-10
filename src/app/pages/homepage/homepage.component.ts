@@ -27,6 +27,7 @@ export class HomepageComponent extends GenericComponent implements OnInit {
 
   ngOnInit() {
     this.config = homepage.config;
+    this.translations = homepage.config.translations;
 
     this.eventService.fetchEvents(new EventRequest())
     .subscribe(res => {

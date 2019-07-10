@@ -2,7 +2,7 @@ export default {
   id: 'SearchResultsPage',
   name: 'SearchResultsPage',
   config: {
-    labels: {
+    translations: {
       carouselHeader: 'Places',
       // carouselSubHeader: '100s of Clubs, Bars and Live Venues available',
     },

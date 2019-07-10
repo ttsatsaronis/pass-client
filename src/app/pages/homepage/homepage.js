@@ -2,7 +2,7 @@ export default {
   id: 'homepage',
   name: 'homepage',
   config: {
-    labels: {
+    translations: {
       carouselHeader: 'Discover Athens Nightlife',
       carouselSubHeader: '100s of Clubs, Bars and Live Venues available',
       todaySlideHeader: 'Today',
