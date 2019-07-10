@@ -2,6 +2,7 @@
 
 .searchContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
@@ -15,6 +16,12 @@
   }
 }
 
+.widthContainer {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
 .filterSection {
   display: flex;
   justify-content: space-between;
@@ -22,5 +29,6 @@
 }
 
 .dropdownSection {
-  padding-right: 16px;
+  display: flex;
+  width: 23%;
 }

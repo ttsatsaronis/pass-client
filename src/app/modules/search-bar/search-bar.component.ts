@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonService } from '../../../services/common.service';
 import { GenericRequest } from '../../../transport/generic.request';
 
@@ -10,6 +10,8 @@ import { GenericRequest } from '../../../transport/generic.request';
 })
 
 export class SearchBarComponent {
+
+  @Input() header: string;
 
   nightCenterTypes: any;
   musicKinds: any;

@@ -7,5 +7,5 @@
     <span *ngIf="headerText" class="header">{{headerText}}</span>
     <span *ngIf="subHeaderText" class="sub-header">{{subHeaderText}}</span>
   </div>
-  <searchBar *ngIf="searchBar"></searchBar>
+  <searchBar *ngIf="searchBar" [header]="'WHERE'"></searchBar>
 </div>

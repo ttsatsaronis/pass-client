@@ -1,14 +1,13 @@
 <div class="searchContainer">
-  <div class="filterSection">
-    <div class="dropdownSection">
-      <dropdown *ngIf="nightCenterTypes" [menu]="nightCenterTypes" [widthSize]="'160px'" [header]="'WHERE'"></dropdown>
+  <div class="widthContainer">
+    <div class="titleContainer">
+      <span class="sectionTitle">{{header}}</span>
     </div>
-    <div class="dropdownSection">
-      <dropdown *ngIf="musicKinds" [menu]="musicKinds" [widthSize]="'160px'"></dropdown>
+    <div class="filterSection">
+      <dropdown *ngIf="nightCenterTypes" class="dropdownSection" [menu]="nightCenterTypes"></dropdown>
+      <dropdown *ngIf="musicKinds" class="dropdownSection" [menu]="musicKinds"></dropdown>
+      <dropdown *ngIf="artists" class="dropdownSection" [menu]="artists"></dropdown>
+      <button class="dropdownSection primaryButton" (click)="onSearch()">Search Now</button>
     </div>
-    <div class="dropdownSection">
-      <dropdown *ngIf="artists" [menu]="artists" [widthSize]="'160px'"></dropdown>
-    </div>
-    <button class="primaryButton" (click)="onSearch()">Search Now</button>
   </div>
 </div>

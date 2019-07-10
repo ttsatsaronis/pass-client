@@ -55,7 +55,8 @@
 }
 
 .primaryButton {
-  display: block;
+  display: flex;
+  justify-content: center;
   height: 40px;
   width: 160px;
   min-width: 160px;
