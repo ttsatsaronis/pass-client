@@ -35,14 +35,14 @@ export class HomepageComponent extends GenericComponent implements OnInit {
   }
 
   epicFunction() {
-      this.deviceInfo = this.deviceService.getDeviceInfo();
-      const isMobile = this.deviceService.isMobile();
-      const isTablet = this.deviceService.isTablet();
-      const isDesktopDevice = this.deviceService.isDesktop();
-      console.log(this.deviceInfo);
-      console.log(isMobile);
-      console.log(isTablet);
-      console.log(isDesktopDevice);
+      // this.deviceInfo = this.deviceService.getDeviceInfo();
+      // const isMobile = this.deviceService.isMobile();
+      // const isTablet = this.deviceService.isTablet();
+      // const isDesktopDevice = this.deviceService.isDesktop();
+      // console.log(this.deviceInfo);
+      // console.log(isMobile);
+      // console.log(isTablet);
+      // console.log(isDesktopDevice);
     }
 
 }
