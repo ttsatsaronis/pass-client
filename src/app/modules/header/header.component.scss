@@ -40,14 +40,15 @@
 .menuItem {
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 16px;
+  margin: 8px;
+  cursor: pointer;
 }
 
 .label {
   font-size: 14px;
   font-family: firaSansRegular;
   color: #FFFFFF;
-  cursor: pointer;
 }
 
 .logo {
