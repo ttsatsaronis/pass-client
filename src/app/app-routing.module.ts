@@ -6,23 +6,23 @@ import { SearchResultsPageComponent } from './pages/searchResultsPage/search-res
 
 
 const routes: Routes = [
-	{
-		path: '',
-		component: HomepageComponent
-	},
-	{
-		path: 'home',
+  {
+    path: '',
+    component: HomepageComponent
+  },
+  {
+    path: 'home',
     redirectTo: '',
-		component: HomepageComponent
-	},
-	{
-		path: 'searchresults',
-		component: SearchResultsPageComponent
-	},
-	{
-		path: '**',
-		component: HomepageComponent
-	}
+    component: HomepageComponent
+  },
+  {
+    path: 'searchresults',
+    component: SearchResultsPageComponent
+  },
+  {
+    path: '**',
+    component: HomepageComponent
+  }
 ];
 
 @NgModule({
