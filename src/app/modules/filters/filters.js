@@ -4,6 +4,8 @@ export default {
   config: {
     translations: {
       header: 'Filters',
+      locationHeader: 'WHERE',
+      musicKind: 'MUSIC',
     },
   },
 };

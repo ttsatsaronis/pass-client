@@ -16,6 +16,8 @@ export class FiltersComponent extends GenericComponent implements OnInit {
 
   nightCenterTypes: any;
   musicKinds: any;
+  selected: boolean = false;
+  map = new Map<string, boolean>();
 
   constructor(
     private commonService: CommonService,
@@ -42,8 +44,20 @@ export class FiltersComponent extends GenericComponent implements OnInit {
     this.commonService.fetchLookup(new GenericRequest('music_kinds'))
       .subscribe(res => {
         this.musicKinds = res.data;
-        this.musicKinds.unshift({id: -1, active: null, name: "All Music", imageUrl: null});
+        this.musicKinds.forEach(element => {
+          this.map.set(element.name, false);
+        });
       });
+
+  }
+
+  onSelect(name: string){
+    // console.log(this.map[name]);
+    if (this.map.has(name)) {
+    console.log(this.map[1]);
+      this.map.set(name, !this.map.get(name));
+    console.log(this.map.get(name));
+    }
   }
 
 }

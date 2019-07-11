@@ -8,5 +8,23 @@
 }
 
 .filterSection {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 16px;
+}
+
+.listItem {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  padding-right: 8px;
+}
+
+.checkboxFont {
+  font-size: 14px;
+  color: $lightGrey;
 }
