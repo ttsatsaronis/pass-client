@@ -1,0 +1,29 @@
+
+<div class="footerContainer">
+  <div class="desktopContainer gutters">
+    <div class="logoContainer">
+        <img [src]="globalStyling.logoIcon" class="logo">
+        <div class="socialSection">
+          <img *ngFor="let item of config.social" [src]="item.icon" class="social">
+        </div>
+    </div>
+    <div class="menuContainer">
+      <div class="menuItem" *ngFor="let item of config.items">
+        <span class="label" (click)="onNavigate(item.path)">{{item.label}}</span>
+      </div>
+    </div>
+    <store></store>
+  </div>
+
+  <div class="mobileContainer">
+    <div class="menuMobileContainer">
+      <div class="menuItem" *ngFor="let item of config.items">
+        <span class="label">{{item.label}}</span>
+      </div>
+      <div class="socialSection">
+        <img *ngFor="let item of config.social" [src]="item.icon" class="social">
+      </div>
+    </div>
+    <store></store>
+  </div>
+</div>

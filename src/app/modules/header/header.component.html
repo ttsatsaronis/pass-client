@@ -1,0 +1,35 @@
+
+<div class="headerContainer">
+
+  <div class="desktopContainer gutters">
+    <img [src]="globalStyling.logoIcon" class="logo" (click)="onNavigate(globalStyling.path)">
+    <div class="menuContainer">
+      <div class="menuItem" *ngFor="let item of config.items" (click)="onNavigate(item.path)">
+        <span class="label">{{item.label}}</span>
+      </div>
+    </div>
+    <div class="menuItem">
+      <span class="label">{{config.bookingLabel}}</span>
+    </div>
+  </div>
+
+  <div class="mobileContainer gutters" tabindex="-1" (blur)="onBlur()">
+    <img [src]="globalStyling.logoIcon" class="logo" (click)="onNavigate(globalStyling.path)">
+    <div class="burger-menu" [class.active]="active" (click)="onBurgerMenu()">
+      <div class="burger-container">
+        <div class="burger-inner"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div [@openClose]="burgerMenu ? 'open' : 'closed'" class="burgerMenu">
+  <div class="mobileMenuItem" *ngFor="let item of config.items" (click)="onNavigate(item.path)">
+    <span class="mobileLabel">{{item.label}}</span>
+  </div>
+  <div class="mobileMenuItem" (click)="onNavigate(item.path)">
+    <span class="mobileLabel">{{config.bookingLabel}}</span>
+  </div>
+</div>

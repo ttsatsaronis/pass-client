@@ -1,0 +1,34 @@
+@import '../../styles-variables';
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 92px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+
+.widthContainer {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.filterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownSection {
+  display: flex;
+  width: 23%;
+}

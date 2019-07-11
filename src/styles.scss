@@ -1,6 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/styles-variables';
+
+.internetExplorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ieLogo {
+  padding: 80px;
+  width: 296px;
+  height: 120px;
+}
+
+.ieText {
+  font-family: firaSansMedium;
+  font-size: 36px;
+  width: 50%;
+  text-align: center;
+  color: $primaryColour;
+}
 
 .basic-template {
   background-color: #020100;
   margin: 0;
+}
+
+.basic-template::-webkit-scrollbar {
+  width: 10px;
+}
+
+.basic-template::-webkit-scrollbar-track {
+  background: $brandBlack;
+}
+
+.basic-template::-webkit-scrollbar-thumb {
+  background: $primaryColour;
+  border-radius: 50px;
+}
+
+@font-face { font-family: firaSansRegular; src: url(src/assets/font/FiraSans-Regular.ttf); }
+@font-face { font-family: firaSansBold; src: url(src/assets/font/FiraSans-Bold.ttf); }
+@font-face { font-family: firaSansLight; src: url(src/assets/font/FiraSans-Light.ttf); }
+@font-face { font-family: firaSansMedium; src: url(src/assets/font/FiraSans-Medium.ttf); }
+
+.gutters {
+  display: flex;
+  width: 1200px;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  @media (max-width: map-get($grid-breakpoints, xl)) {
+    width: 100%;
+  }
+}
+
+.primaryButton {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 160px;
+  min-width: 160px;
+  border-radius: 50px;
+  font-family: firaSansMedium;
+  font-size: 16px;
+  background-color: $primaryColour;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.primaryButton:hover {
+  font-family: firaSansBold;
+}
+
+.primaryButton:active {
+  transform: translateY(2px);
+}
+
+.firaSansRegular {
+  font-family: firaSansRegular;
+}
+
+.firaSansBold {
+  font-family: firaSansBold;
+}
+
+.firaSansLight {
+  font-family: firaSansLight;
+}
+
+.firaSansMedium {
+  font-family: firaSansMedium;
+}
+
+.moduleTitle {
+  font-family: firaSansBold;
+  font-size: 18px;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.sectionTitle {
+  font-family: firaSansMedium;
+  font-size: 12px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+  cursor: default;
 }

@@ -1,0 +1,11 @@
+
+<div class="container" [ngStyle]="{'max-height': maxHeight}">
+  <div class="imageContainer">
+    <img [src]="image" class="image">
+  </div>
+  <div class="labelContainer">
+    <span *ngIf="translations.carouselHeader" class="header">{{translations.carouselHeader}}</span>
+    <span *ngIf="translations.carouselSubHeader" class="sub-header">{{translations.carouselSubHeader}}</span>
+  </div>
+  <searchBar *ngIf="searchBar" [header]="'WHERE'"></searchBar>
+</div>

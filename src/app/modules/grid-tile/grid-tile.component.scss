@@ -1,0 +1,40 @@
+@import '../../styles-variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 8px 16px;
+  max-height: 60px;
+  min-height: 60px;
+  flex-direction: column;
+  background-color: $brandBlack
+}
+
+.image {
+  width: 100%;
+}
+
+.eventLabel {
+  font-size: 18px;
+  font-family: firaSansBold;
+  color: #FFFFFF;
+}
+
+.nightClubLabel {
+  font-size: 16px;
+  font-family: firaSansLight;
+  color: #FFFFFF;
+}

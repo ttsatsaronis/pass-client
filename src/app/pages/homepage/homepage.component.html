@@ -1,0 +1,12 @@
+
+<header></header>
+<carousel
+  [translations]="translations"
+  [image]="config.imageCarousel"
+  [maxHeight]="config.imageCarouselMaxHeight"
+  [searchBar]=config.showSearchBar>
+</carousel>
+<slide [results]="todayResults" [headerText]="translations.todaySlideHeader" [translations]="translations" scrollOnMobile=true></slide>
+<slide [results]="weekResults" [headerText]="translations.weekSlideHeader" [translations]="translations"></slide>
+<slide [results]="monthResults" [headerText]="translations.monthSlideHeader" [translations]="translations"></slide>
+<footer></footer>

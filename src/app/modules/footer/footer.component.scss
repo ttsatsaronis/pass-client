@@ -1,0 +1,97 @@
+@import '../../styles-variables';
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid $darkGrey;
+}
+
+.desktopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialSection {
+  display: flex;
+}
+
+.social {
+  width: 24px;
+  height: 24px;
+  margin: 16px 8px 0 0;
+  cursor: pointer;
+  &:last-child {
+    margin: 16px 0 0 0;
+  }
+}
+
+.mobileContainer {
+  display: none;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  margin-right: auto;
+}
+
+.menuMobileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 4px 24px;
+}
+
+.label {
+  font-size: 14px;
+  font-family: firaSansRegular;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.appsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  padding: 8px;
+}
+
+.logo {
+  width: 74px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.apps {
+  width: 128px;
+  height: 42px;
+  cursor: pointer;
+}

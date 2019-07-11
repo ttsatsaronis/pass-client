@@ -1,0 +1,80 @@
+@import '../../styles-variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0 16px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.slideContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 0 0;
+}
+
+.scrollSlideContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scrollSlideContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  cursor: pointer;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    width: 49%;
+  }
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    width: 100%;
+  }
+}
+
+.scrollItemContainer {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  cursor: pointer;
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    min-width: 260px;
+    padding-right: 16px
+  }
+}
+
+.headerText {
+  font-size: 32px;
+  font-family: firaSansBold;
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.viewAllLabel {
+  font-size: 14px;
+  font-family: firaSansMedium;
+  text-decoration: underline;
+  color: $primaryColour;
+  cursor: pointer;
+}
+
+.column {
+  flex-direction: column;
+}
