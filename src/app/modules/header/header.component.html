@@ -13,22 +13,23 @@
     </div>
   </div>
 
-  <div class="mobileContainer gutters">
-    <img [src]="globalStyling.logoIcon" class="logo">
-    <img [src]="config.burgerMenuIcon" class="icon" (click)="onBurgerMenu()">
-
-    <div class="burgerMenu" *ngIf="burgerMenu">
-      <div class="closeContainer">
-        <img [src]="config.closeIcon" class="icon" (click)="onBurgerMenu()">
-      </div>
-      <div class="mobileMenuItem" *ngFor="let item of config.items">
-        <span class="mobileLabel">{{item.label}}</span>
-      </div>
-      <div class="mobileMenuItem">
-        <span class="mobileLabel">{{config.bookingLabel}}</span>
+  <div class="mobileContainer gutters" tabindex="-1" (blur)="onBlur()">
+    <img [src]="globalStyling.logoIcon" class="logo" (click)="onNavigate(globalStyling.path)">
+    <div class="burger-menu" [class.active]="active" (click)="onBurgerMenu()">
+      <div class="burger-container">
+        <div class="burger-inner"></div>
       </div>
     </div>
 
   </div>
 
+</div>
+
+<div [@openClose]="burgerMenu ? 'open' : 'closed'" class="burgerMenu">
+  <div class="mobileMenuItem" *ngFor="let item of config.items" (click)="onNavigate(item.path)">
+    <span class="mobileLabel">{{item.label}}</span>
+  </div>
+  <div class="mobileMenuItem" (click)="onNavigate(item.path)">
+    <span class="mobileLabel">{{config.bookingLabel}}</span>
+  </div>
 </div>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { DeviceDetectorModule } from 'ngx-device-detector';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 //pages
 import { PassComponent } from 'src/app/pass.component';
@@ -39,6 +40,7 @@ import { FiltersComponent } from './modules/filters/filters.component';
 
     HttpClientModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
