@@ -132,6 +132,7 @@ $burgerBarColor: $primaryColour;
         left: -$burgerBarHeight;
         width: $burgerWidth - 2 * $burgerBarHeight;
         border: $burgerBarHeight solid $burgerBarColor;
+        background-color: $burgerBarColor;
         transition: top .2s ease-in .3s, transform ease-in .2s;
       }
 
@@ -142,6 +143,7 @@ $burgerBarColor: $primaryColour;
         left: -$burgerBarHeight;
         width: $burgerWidth - 2 * $burgerBarHeight;
         border: $burgerBarHeight solid $burgerBarColor;
+        background-color: $burgerBarColor;
         transition: top .2s ease-in .3s, transform ease-in .2s;
       }
     }

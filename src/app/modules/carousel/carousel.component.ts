@@ -10,9 +10,8 @@ import { GenericRequest } from '../../../transport/generic.request';
 })
 
 export class CarouselComponent {
+  @Input() translations: any;
   @Input() image: string;
   @Input() maxHeight: string;
-  @Input() headerText: string;
-  @Input() subHeaderText: string;
   @Input() searchBar: boolean;
 }
