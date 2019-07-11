@@ -6,9 +6,15 @@
   [maxHeight]="config.imageCarouselMaxHeight"
   [searchBar]=config.showSearchBar>
 </carousel>
-<div class="resultsContainer">
-  <div class="gutters">
-    <filters class="filterContainer gutters"></filters>
+<div class="resultsContainer column">
+  <div class="overlay"></div>
+  <div class="backgroundContainer">
+    <div class="leftSection flex">
+      <filters class="filterContainer gutters"></filters>
+    </div>
+    <div class="rightSection flex">
+      <filters class="test gutters"></filters>
+    </div>
   </div>
 </div>
 <footer></footer>

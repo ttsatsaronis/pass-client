@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    display: none;
+  }
 }
 
 .imageContainer {
@@ -32,10 +36,6 @@
   width: 100%;
   position: absolute;
   bottom: 0px;
-
-  @media (max-width: map-get($grid-breakpoints, md)) {
-    display: none;
-  }
 }
 
 .filterSection {
