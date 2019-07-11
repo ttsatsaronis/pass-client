@@ -4,11 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-//pages
+// pages
 import { PassComponent } from 'src/app/pass.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SearchResultsPageComponent } from './pages/searchResultsPage/search-results-page.component';
-//modules
+// modules
 import { HeaderComponent } from './modules/header/header.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { CarouselComponent } from './modules/carousel/carousel.component';
