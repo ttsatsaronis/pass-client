@@ -123,6 +123,7 @@ $burgerBarColor: $primaryColour;
       left: 0px;
       top: 11px;
       border: $burgerBarHeight solid $burgerBarColor;
+      background-color: $burgerBarColor;
       transition: border-color .2s ease-in .2s;
 
       &::before {
@@ -151,6 +152,7 @@ $burgerBarColor: $primaryColour;
 
   &.active .burger-container .burger-inner {
     border-color: transparent;
+    background-color: transparent;
     transition: border-color ease-in .1s;
   }
 
