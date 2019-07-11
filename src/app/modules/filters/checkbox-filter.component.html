@@ -1,0 +1,15 @@
+<div class="filterSection">
+  <div class="sectionTitleContainer flex space">
+    <span class="sectionTitle">{{translations.musicKindSection}}</span>
+    <span *ngIf="data.size > 4" class="clickLabel" (click)="showMore()">{{showHideLabel}}</span>
+  </div>
+  <div class="scroll valuesContainer column flex">
+    <div *ngFor="let item of data | keyvalue let i = index" class="flex" (click)="onSelect(item.key)">
+      <div *ngIf="i < showHide" class="listItem">
+        <img *ngIf="!item.value" src="https://res.cloudinary.com/pass-app/image/upload/v1562852710/pass%20app/global/checkbox-unchecked_phhlyv.svg" class="checkbox">
+        <img *ngIf="item.value" src="https://res.cloudinary.com/pass-app/image/upload/v1562852960/pass%20app/global/checkbox-checked_aupibw.svg" class="checkbox">
+        <span class="checkboxFont firaSansRegular">{{item.key}}</span>
+      </div>
+    </div>
+  </div>
+</div>

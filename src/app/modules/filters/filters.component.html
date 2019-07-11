@@ -1,17 +1,5 @@
 <div class="container">
   <span class="moduleTitle">{{translations.header}}</span>
-  <div class="filterSection">
-    <span class="sectionTitle">{{translations.locationHeader}}</span>
-    <dropdown *ngIf="nightCenterTypes" [menu]="nightCenterTypes"></dropdown>
-  </div>
-  <div class="filterSection">
-    <span class="sectionTitle">{{translations.musicKind}}</span>
-    <div *ngFor="let item of map | keyvalue" class="listItem">
-      <div (click)="onSelect(item.key)">
-        <img *ngIf="!item.value" src="https://res.cloudinary.com/pass-app/image/upload/v1562852710/pass%20app/global/checkbox-unchecked_phhlyv.svg" class="checkbox">
-        <img *ngIf="item.value" src="https://res.cloudinary.com/pass-app/image/upload/v1562852960/pass%20app/global/checkbox-checked_aupibw.svg" class="checkbox">
-      </div>
-      <span class="checkboxFont firaSansRegular">{{item.key}}</span>
-    </div>
-  </div>
+  <dropdownFilter [data]="nightCenterTypes" [header]="translations.locationHeader" class="flex"></dropdownFilter>
+  <checkboxFilter [data]="map" [translations]="translations" class="flex"></checkboxFilter>
 </div>

@@ -5,7 +5,9 @@ export default {
     translations: {
       header: 'Filters',
       locationHeader: 'WHERE',
-      musicKind: 'MUSIC',
+      musicKindSection: 'MUSIC',
+      showMoreLabel: 'Show More...',
+      hideLabel: 'Hide...',
     },
   },
 };

@@ -16,7 +16,6 @@ export class FiltersComponent extends GenericComponent implements OnInit {
 
   nightCenterTypes: any;
   musicKinds: any;
-  selected: boolean = false;
   map = new Map<string, boolean>();
 
   constructor(
@@ -49,15 +48,6 @@ export class FiltersComponent extends GenericComponent implements OnInit {
         });
       });
 
-  }
-
-  onSelect(name: string){
-    // console.log(this.map[name]);
-    if (this.map.has(name)) {
-    console.log(this.map[1]);
-      this.map.set(name, !this.map.get(name));
-    console.log(this.map.get(name));
-    }
   }
 
 }

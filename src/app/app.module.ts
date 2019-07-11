@@ -18,6 +18,8 @@ import { DropdownComponent } from './modules/dropdown/dropdown.component';
 import { SlideComponent } from './modules/slide/slide.component';
 import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
 import { FiltersComponent } from './modules/filters/filters.component';
+import { DropdownFilterComponent } from './modules/filters/dropdown-filter.component';
+import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,11 @@ import { FiltersComponent } from './modules/filters/filters.component';
     DropdownComponent,
     SlideComponent,
     GridTileComponent,
+
+    //filters
     FiltersComponent,
+    DropdownFilterComponent,
+    CheckboxFilterComponent
   ],
   imports: [
     DeviceDetectorModule.forRoot(),
