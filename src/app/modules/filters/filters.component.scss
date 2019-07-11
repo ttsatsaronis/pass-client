@@ -2,9 +2,8 @@
 
 .container {
   display: flex;
-  width: 244px;
   flex-direction: column;
-  padding: 32px 16px 32px 0;
+  width: 100%;
 }
 
 .filterSection {
@@ -41,5 +40,6 @@
 }
 
 .valuesContainer {
+  padding-left: 8px;
   max-height: 200px;
 }
