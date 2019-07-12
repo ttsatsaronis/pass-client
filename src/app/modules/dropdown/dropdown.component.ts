@@ -9,6 +9,9 @@ export class DropdownComponent {
 
   @Input() menu: any;
   @Input() widthSize: string;
+  @Input() blackYellow: boolean;
+  @Input() iconOff: string;
+  @Input() iconOn: string;
   selectedItem: string;
 
   open: boolean = false;

@@ -14,11 +14,14 @@
   outline: none;
 }
 
+.blackYellow {
+  background-color: transparent;
+}
+
 .selectContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
   height: 100%;
   width: 100%;
   padding: 0 8px;
@@ -78,6 +81,12 @@
 .title {
   font-family: firaSansRegular;
   font-size: 12px;
+}
+
+.yellowtitle {
+  font-family: firaSansRegular;
+  font-size: 12px;
+  color: $primaryColour;
 }
 
 .icon {

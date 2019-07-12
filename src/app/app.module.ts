@@ -20,6 +20,7 @@ import { GridTileComponent } from './modules/grid-tile/grid-tile.component';
 import { FiltersComponent } from './modules/filters/filters.component';
 import { DropdownFilterComponent } from './modules/filters/dropdown-filter.component';
 import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.component';
+import { ResultsComponent } from './modules/results/results.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.compo
     DropdownComponent,
     SlideComponent,
     GridTileComponent,
+    ResultsComponent,
 
     //filters
     FiltersComponent,
