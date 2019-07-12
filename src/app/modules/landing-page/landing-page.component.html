@@ -1,0 +1,7 @@
+<div *ngIf="isIE else elsePart" class="internetExplorer">
+  <img [src]="logoIcon" class="ieLogo">
+  <span class="ieText">Οι υπηρεσίες μας δεν διατίθενται σε Internet Explorer παρακαλώ δοκιμάστε απο διαφορετικό πρόγραμμα περιήγησης</span>
+</div>
+<ng-template #elsePart>
+  <router-outlet></router-outlet>
+</ng-template>

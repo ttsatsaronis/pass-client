@@ -5,10 +5,10 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 // pages
-import { PassComponent } from 'src/app/pass.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SearchResultsPageComponent } from './pages/searchResultsPage/search-results-page.component';
 // modules
+import { LandingPageComponent } from './modules/landing-page/landing-page.component';
 import { HeaderComponent } from './modules/header/header.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { CarouselComponent } from './modules/carousel/carousel.component';
@@ -24,10 +24,10 @@ import { ResultsComponent } from './modules/results/results.component';
 
 @NgModule({
   declarations: [
-    PassComponent,
     HomepageComponent,
     SearchResultsPageComponent,
 
+    LandingPageComponent,
     HeaderComponent,
     FooterComponent,
     StoreComponent,
@@ -52,6 +52,6 @@ import { ResultsComponent } from './modules/results/results.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [ PassComponent ]
+  bootstrap: [ LandingPageComponent ]
 })
 export class AppModule { }
