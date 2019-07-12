@@ -1,0 +1,19 @@
+@import '../../styles-variables';
+
+.tilesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  min-width: 32%;
+  width: 32%;
+  padding-bottom: 16px;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    min-width: 100%;
+    width: 100%;
+  }
+}

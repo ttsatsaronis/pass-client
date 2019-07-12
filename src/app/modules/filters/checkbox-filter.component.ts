@@ -11,13 +11,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         maxHeight: '150px'
       })),
       state('closed', style({
-        maxHeight: '100px'
+        maxHeight: '110px'
       })),
       transition('open => closed', [
-        animate('0.5s')
+        animate('0.3s')
       ]),
       transition('closed => open', [
-        animate('0.5s')
+        animate('0.3s')
       ]),
     ])
   ],

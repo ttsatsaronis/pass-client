@@ -7,14 +7,9 @@
   [searchBar]=config.showSearchBar>
 </carousel>
 <div class="resultsContainer column">
-  <div class="overlay"></div>
-  <div class="backgroundContainer">
-    <div class="leftSection flex">
-      <filters class="filterContainer gutters"></filters>
-    </div>
-    <div class="rightSection flex">
-      <results [translations]="translations" [config]="config" class="results"></results>
-    </div>
+  <div class="guttersWithoutPaddings">
+    <filters class="filterContainer"></filters>
+    <results [translations]="translations" [config]="config" class="results" [results]="results"></results>
   </div>
 </div>
 <footer></footer>

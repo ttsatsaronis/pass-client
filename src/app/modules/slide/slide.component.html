@@ -5,9 +5,7 @@
       <span class="clickLabel">{{translations.slideViewAllLabel}}</span>
     </div>
     <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
-      <div *ngFor="let item of results" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'">
-        <gridTile [item]=item></gridTile>
-      </div>
+      <gridTile *ngFor="let item of results" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'" [item]=item></gridTile>
     </div>
   </div>
 </div>

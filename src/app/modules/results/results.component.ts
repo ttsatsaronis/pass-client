@@ -12,6 +12,7 @@ import { GenericRequest } from '../../../transport/generic.request';
 export class ResultsComponent implements OnInit {
   @Input() translations: any;
   @Input() config: any;
+  @Input() results: any;
 
   ngOnInit(){
 
