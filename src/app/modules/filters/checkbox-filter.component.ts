@@ -1,9 +1,26 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'checkboxFilter',
   templateUrl: './checkbox-filter.component.html',
-  styleUrls: ['./filters.component.scss']
+  styleUrls: ['./filters.component.scss'],
+  animations: [
+    trigger('openClose', [
+      state('open', style({
+        maxHeight: '150px'
+      })),
+      state('closed', style({
+        maxHeight: '100px'
+      })),
+      transition('open => closed', [
+        animate('0.5s')
+      ]),
+      transition('closed => open', [
+        animate('0.5s')
+      ]),
+    ])
+  ],
 })
 export class CheckboxFilterComponent implements OnInit {
 

@@ -4,7 +4,7 @@ import { EventRequest } from 'src/transport/helper/event.request.js';
 import { GenericComponent } from '../../generic.component';
 import homepage from './homepage.js';
 
-import { DeviceDetectorService } from 'ngx-device-detector';
+// import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'homepage',
@@ -20,11 +20,11 @@ export class HomepageComponent extends GenericComponent implements OnInit {
   monthResults: any;
 
   constructor(
-    private deviceService: DeviceDetectorService,
+    // private deviceService: DeviceDetectorService,
     private eventService: EventService
   ) {
     super();
-    this.epicFunction();
+    // this.epicFunction();
   }
 
   ngOnInit() {
