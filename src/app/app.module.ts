@@ -23,6 +23,7 @@ import { DropdownFilterComponent } from './modules/filters/dropdown-filter.compo
 import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.component';
 import { ResultsComponent } from './modules/results/results.component';
 import { ImageCarouselComponent } from './modules/image-carousel/image-carousel.component';
+import { CookiePolicyComponent } from './modules/cookie-policy/cookie-policy.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ImageCarouselComponent } from './modules/image-carousel/image-carousel.
     EventDetailsComponent,
 
     LandingPageComponent,
+    CookiePolicyComponent,
     HeaderComponent,
     FooterComponent,
     StoreComponent,

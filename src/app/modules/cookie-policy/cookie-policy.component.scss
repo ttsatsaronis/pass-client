@@ -1,0 +1,28 @@
+@import '../../styles-variables';
+
+.cookies{
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: $primaryColour;
+  width: 250px;
+  border-radius: 5px;
+  align-items: center;
+  z-index: 100;
+}
+
+.cookieText {
+  font-family: firaSansRegular;
+  font-size: 16px;
+  color: $brandBlack;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.cookieButton {
+  background-color: $brandBlack;
+  color: $primaryColour;
+}
