@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'gridTile',
@@ -8,6 +9,14 @@ import { Component, Input } from '@angular/core';
 export class GridTileComponent {
 
   @Input() item: any;
+
+  constructor(
+    private router: Router,
+  ) {}
+
+  onNavigate(path: string) {
+    this.router.navigate(["/", path]);
+  }
 
 
 }

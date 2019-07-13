@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SearchResultsPageComponent } from './pages/searchResultsPage/search-results-page.component';
+import { EventDetailsComponent } from './pages/eventDetails/event-details.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'searchresults',
     component: SearchResultsPageComponent
+  },
+  {
+    path: 'eventdetails',
+    component: EventDetailsComponent
   },
   {
     path: '**',

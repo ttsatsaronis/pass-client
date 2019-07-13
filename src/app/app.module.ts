@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 // pages
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SearchResultsPageComponent } from './pages/searchResultsPage/search-results-page.component';
+import { EventDetailsComponent } from './pages/eventDetails/event-details.component';
 // modules
 import { LandingPageComponent } from './modules/landing-page/landing-page.component';
 import { HeaderComponent } from './modules/header/header.component';
@@ -26,6 +27,7 @@ import { ResultsComponent } from './modules/results/results.component';
   declarations: [
     HomepageComponent,
     SearchResultsPageComponent,
+    EventDetailsComponent,
 
     LandingPageComponent,
     HeaderComponent,
