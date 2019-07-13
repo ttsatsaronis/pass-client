@@ -22,6 +22,7 @@ import { FiltersComponent } from './modules/filters/filters.component';
 import { DropdownFilterComponent } from './modules/filters/dropdown-filter.component';
 import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.component';
 import { ResultsComponent } from './modules/results/results.component';
+import { ImageCarouselComponent } from './modules/image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ResultsComponent } from './modules/results/results.component';
     SlideComponent,
     GridTileComponent,
     ResultsComponent,
+    ImageCarouselComponent,
 
     //filters
     FiltersComponent,
