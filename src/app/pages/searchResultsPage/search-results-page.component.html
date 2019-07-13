@@ -6,8 +6,21 @@
   [maxHeight]="config.imageCarouselMaxHeight"
   [searchBar]=config.showSearchBar>
 </carousel>
+<div *ngIf="showFilters" class="overlay" (click)="onClose()"></div>
+<div class="filterButton" (click)="showNavbar()">
+  <img [src]="config.filterIcon" class="filterIcon">
+  <span class="clickLabel">{{translations.filters}}</span>
+</div>
 <div class="resultsContainer column">
   <div class="guttersWithoutPaddings">
+    <div class="mobileOnly">
+      <div class="navbar" [@openClose]="showFilters ? 'open' : 'closed'">
+        <div class="closeContainer">
+          <img [src]="config.closeIcon" class="closeIcon" (click)="onClose()">
+        </div>
+        <filters class="mobileFilterContainer"></filters>
+      </div>
+    </div>
     <filters class="filterContainer"></filters>
     <results [translations]="translations" [config]="config" class="results" [results]="results"></results>
   </div>

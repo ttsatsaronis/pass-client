@@ -5,6 +5,7 @@ export default {
     translations: {
       results: 'Results',
       sortMenuPrefixLabel: 'Sort by: ',
+      filters: 'Φίλτρα',
     },
     sortMenu: [
       {
@@ -19,5 +20,7 @@ export default {
     showSearchBar: false,
     dropdownArrowDown: 'https://res.cloudinary.com/pass-app/image/upload/v1562888629/pass%20app/global/yellow-arrow-down_swexf2.svg',
     dropdownArrowUp: 'https://res.cloudinary.com/pass-app/image/upload/v1562888643/pass%20app/global/yellow-arrow-up_catvlj.svg',
+    filterIcon: 'https://res.cloudinary.com/pass-app/image/upload/v1563016905/pass%20app/global/filters_xqsbgh.svg',
+    closeIcon: 'https://res.cloudinary.com/pass-app/image/upload/v1562670893/pass%20app/global/close_b47yop.svg',
   },
 };
