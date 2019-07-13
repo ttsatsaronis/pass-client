@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from "@angular/router";
 import { EventService } from 'src/services/event.service.js';
 import { EventRequest } from 'src/transport/helper/event.request.js';
 
@@ -13,5 +14,14 @@ export class SlideComponent {
   @Input() headerText: string;
   @Input() scrollOnMobile: boolean = false;
   @Input() results: any;
+
+  constructor(
+    private router: Router
+  ) {}
+
+
+  onNavigate(path: string) {
+    this.router.navigate(["/", path]);
+  }
 
 }
