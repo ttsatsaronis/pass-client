@@ -1,1 +1,10 @@
-dsadadsadasdas
+<div class="container center">
+    <div class="carouselContainer">
+      <img [src]='selectedImage' class="image">
+    </div>
+    <div class="imagesContainer">
+      <div *ngFor="let item of images" class="item" (click)="onSelect(item)">
+        <img [src]="item" class="itemImage">
+      </div>
+    </div>
+</div>

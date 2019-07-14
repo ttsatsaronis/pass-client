@@ -14,8 +14,8 @@ export class GridTileComponent {
     private router: Router,
   ) {}
 
-  onNavigate(path: string) {
-    this.router.navigate(["/", path]);
+  onNavigate(path: string, paramId: number) {
+    this.router.navigate(["/", path, paramId]);
   }
 
 

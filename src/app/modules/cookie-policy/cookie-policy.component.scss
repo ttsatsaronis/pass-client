@@ -12,6 +12,13 @@
   border-radius: 5px;
   align-items: center;
   z-index: 100;
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .cookieText {

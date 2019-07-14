@@ -21,7 +21,7 @@ const routes: Routes = [
     component: SearchResultsPageComponent
   },
   {
-    path: 'eventdetails',
+    path: 'eventdetails/:id',
     component: EventDetailsComponent
   },
   {
