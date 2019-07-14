@@ -5,6 +5,7 @@ export default {
     translations: {
       results: 'Results',
       sortMenuPrefixLabel: 'Sort by: ',
+      musicType: 'Είδος Μουσικής',
       filters: 'Φίλτρα',
     },
     sortMenu: [

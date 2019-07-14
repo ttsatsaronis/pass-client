@@ -5,11 +5,11 @@ export default {
     items: [
       {
         label: 'DISCOVER',
-        path: 'searchresults',
+        path: 'discover',
       },
       {
         label: 'PLACES',
-        path: 'searchresults',
+        path: 'places',
       },
     ],
   bookingLabel: 'MY BOOKINGS',

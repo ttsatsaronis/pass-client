@@ -17,8 +17,14 @@ const routes: Routes = [
     component: HomepageComponent
   },
   {
-    path: 'searchresults',
-    component: SearchResultsPageComponent
+    path: 'discover',
+    component: SearchResultsPageComponent,
+		data: { load: 'discover' },
+  },
+  {
+    path: 'places',
+    component: SearchResultsPageComponent,
+		data: { load: 'places' },
   },
   {
     path: 'eventdetails/:id',

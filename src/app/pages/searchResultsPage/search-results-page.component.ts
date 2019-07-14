@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { EventService } from 'src/services/event.service.js';
 import { EventRequest } from 'src/transport/helper/event.request.js';
@@ -34,9 +35,11 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
   deviceInfo: any;
   results: any;
   showFilters: boolean = false;
+  screenView: any;
 
   constructor(
-    private eventService: EventService
+    private eventService: EventService,
+    private activatedRoute: ActivatedRoute,
     ) {
       super();
     }
@@ -44,7 +47,19 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
   ngOnInit() {
     this.config = searchResultsPage.config;
     this.translations = searchResultsPage.config.translations;
+    this.screenView = this.activatedRoute.snapshot.data.load;
 
+    this.screenView === 'discover' ? this.loadDiscoverFilters() : this.loadPlacesFilters();
+  }
+
+  loadDiscoverFilters() {
+    this.eventService.fetchEvents(new EventRequest())
+    .subscribe(res => {
+      this.results = res.data;
+    });
+  }
+
+  loadPlacesFilters() {
     this.eventService.fetchEvents(new EventRequest())
     .subscribe(res => {
       this.results = res.data;
