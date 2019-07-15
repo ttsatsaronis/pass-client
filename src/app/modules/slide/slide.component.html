@@ -2,7 +2,7 @@
   <div class="column gutters">
     <div class="titleContainer">
       <span class="headerText">{{headerText}}</span>
-      <span class="clickLabel" (click)="onNavigate('searchresults')">{{translations.slideViewAllLabel}}</span>
+      <span class="clickLabel" (click)="onNavigate('discover')">{{translations.slideViewAllLabel}}</span>
     </div>
     <div [ngClass]="scrollOnMobile ? 'scrollSlideContainer' : 'slideContainer'">
       <gridTile *ngFor="let item of results" [ngClass]="scrollOnMobile ? 'scrollItemContainer' : 'itemContainer'" [item]=item></gridTile>
