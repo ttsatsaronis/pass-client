@@ -1,4 +1,4 @@
-import { GenericRequest } from '../generic.request';
+import { GenericRequest } from './generic.request';
 
 export class EventRequest extends GenericRequest {
 

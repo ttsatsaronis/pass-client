@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import globalStyling from '../../globalStyling.js';
 import { GenericComponent } from '../../generic.component';
-import footer from './footer.js';
+import footer from '../../configurations/modules/footer.js';
 
 @Component({
   selector: 'footer',

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { IList } from 'src/transport/helper/list.response';
 import { map } from 'rxjs/operators';
-import { EventRequest } from 'src/transport/helper/event.request';
+import { EventRequest } from 'src/transport/event.request';
 import { serverURL, authURL } from 'src/transport/helper/url.helper';
 
 

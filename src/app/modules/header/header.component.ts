@@ -3,7 +3,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { Router } from "@angular/router";
 import globalStyling from '../../globalStyling.js';
 import { GenericComponent } from '../../generic.component';
-import header from './header.js';
+import header from '../../configurations/modules/header.js';
 
 @Component({
   selector: 'header',

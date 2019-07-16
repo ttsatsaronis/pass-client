@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { EventService } from 'src/services/event.service.js';
-import { EventRequest } from 'src/transport/helper/event.request.js';
+import { EventRequest } from 'src/transport/event.request.js';
 import { GenericComponent } from '../../generic.component';
-import searchResultsPage from './search-results-page.js';
+import searchResultsPage from '../../configurations/pages/search-results-page.js';
 
 @Component({
   selector: 'searchResultsPage',

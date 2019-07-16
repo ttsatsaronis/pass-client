@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GenericComponent } from '../../generic.component';
-import eventDetails from './event-details.js';
+import eventDetails from '../../configurations/pages/event-details.js';
 
 @Component({
   selector: 'eventDetails',

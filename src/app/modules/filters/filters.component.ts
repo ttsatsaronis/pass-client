@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { GenericComponent } from '../../generic.component';
 import { CommonService } from '../../../services/common.service';
 import { GenericRequest } from '../../../transport/generic.request';
-import filters from './filters'
+import filters from '../../configurations/modules/filters'
 
 @Component({
   selector: 'filters',

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from 'src/services/event.service.js';
-import { EventRequest } from 'src/transport/helper/event.request.js';
+import { EventRequest } from 'src/transport/event.request.js';
 import { GenericComponent } from '../../generic.component';
-import homepage from './homepage.js';
+import homepage from '../../configurations/pages/homepage.js';
 
 // import { DeviceDetectorService } from 'ngx-device-detector';
 
