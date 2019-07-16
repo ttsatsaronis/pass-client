@@ -1,0 +1,18 @@
+<div class="container" [ngClass]="blackYellow ? 'blackYellow' : 'container'" [ngStyle]="{'width': widthSize}">
+  <div class="selectContainer" (click)="onExpand()">
+    <span [ngClass]="blackYellow ? 'yellowtitle' : 'title'">{{selectedItem}}</span>
+    <img *ngIf="!open" [src]="iconOff || 'https://res.cloudinary.com/pass-app/image/upload/v1562445026/pass%20app/global/arrow-down_f80r8d.svg'" class="icon">
+    <img *ngIf="open" [src]="iconOn || 'https://res.cloudinary.com/pass-app/image/upload/v1562670676/pass%20app/global/arrow-up_uy6r8s.svg'" class="icon">
+  </div>
+
+  <div *ngIf="open" class="expandContainer">
+    <div class="daysContainer">
+      <div *ngFor="let item of days" class="day">
+        <span>{{item}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- tabindex="-1" (blur)="onBlur()" -->

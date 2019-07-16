@@ -1,5 +1,7 @@
 <div class="container">
-  <span class="moduleTitle">{{translations.header}}</span>
-  <dropdownFilter [data]="nightCenterTypes" [header]="translations.locationHeader" class="flex"></dropdownFilter>
-  <checkboxFilter [data]="map" [translations]="translations" class="flex"></checkboxFilter>
+  <div class="headerContainer">
+    <span class="moduleTitle">{{translations.header}}</span>
+  </div>
+  <dropdownFilter [data]="nightCenterTypes" [header]="translations.locationHeader" class="filterSection"></dropdownFilter>
+  <checkboxFilter [data]="map" [translations]="translations" class="filterSection"></checkboxFilter>
 </div>

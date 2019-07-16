@@ -1,5 +1,11 @@
 @import '../../styles-variables';
 
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .tilesContainer {
   display: flex;
   justify-content: space-between;

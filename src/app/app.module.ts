@@ -24,6 +24,7 @@ import { CheckboxFilterComponent } from './modules/filters/checkbox-filter.compo
 import { ResultsComponent } from './modules/results/results.component';
 import { ImageCarouselComponent } from './modules/image-carousel/image-carousel.component';
 import { CookiePolicyComponent } from './modules/cookie-policy/cookie-policy.component';
+import { CalendarComponent } from './modules/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CookiePolicyComponent } from './modules/cookie-policy/cookie-policy.com
     GridTileComponent,
     ResultsComponent,
     ImageCarouselComponent,
+    CalendarComponent,
 
     //filters
     FiltersComponent,
