@@ -32,7 +32,7 @@ export class SearchBarComponent {
     this.commonService.fetchLookup(new GenericRequest('night_center_types'))
       .subscribe(res => {
         this.nightCenterTypes = res.data;
-        this.nightCenterTypes.unshift({id: -1, active: null, name: "All Places", imageUrl: null});
+        this.nightCenterTypes.unshift({id: -1, active: null, name: 'All Places', imageUrl: null});
       });
   }
 
@@ -40,7 +40,7 @@ export class SearchBarComponent {
     this.commonService.fetchLookup(new GenericRequest('music_kinds'))
       .subscribe(res => {
         this.musicKinds = res.data;
-        this.musicKinds.unshift({id: -1, active: null, name: "All Music", imageUrl: null});
+        this.musicKinds.unshift({id: -1, active: null, name: 'All Music', imageUrl: null});
       });
   }
 
@@ -48,7 +48,7 @@ export class SearchBarComponent {
     this.commonService.fetchLookup(new GenericRequest('artists'))
       .subscribe(res => {
         this.artists = res.data;
-        this.artists.unshift({id: -1, active: null, name: "All Artists", imageUrl: null});
+        this.artists.unshift({id: -1, active: null, name: 'All Artists', imageUrl: null});
       });
   }
 

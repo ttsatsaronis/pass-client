@@ -16,7 +16,7 @@ export class ImageCarouselComponent implements OnInit {
     this.selectedImage = this.images[0];
   }
 
-  onSelect(image: string){
+  onSelect(image: string) {
     this.selectedImage = image;
   }
 
