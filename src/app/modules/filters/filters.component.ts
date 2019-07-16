@@ -31,15 +31,15 @@ export class FiltersComponent extends GenericComponent implements OnInit {
     this.translations = filters.config.translations;
   }
 
-  onNightCenterTypes(){
+  onNightCenterTypes() {
     this.commonService.fetchLookup(new GenericRequest('night_center_types'))
       .subscribe(res => {
         this.nightCenterTypes = res.data;
-        this.nightCenterTypes.unshift({id: -1, active: null, name: "All Places", imageUrl: null});
+        this.nightCenterTypes.unshift({id: -1, active: null, name: 'All Places', imageUrl: null});
       });
   }
 
-  onMusicKinds(){
+  onMusicKinds() {
     this.commonService.fetchLookup(new GenericRequest('music_kinds'))
       .subscribe(res => {
         this.musicKinds = res.data;
