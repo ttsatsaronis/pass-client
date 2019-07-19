@@ -5,10 +5,12 @@ import { EventService } from 'src/services/event.service.js';
 import { EventRequest } from 'src/transport/event.request.js';
 import { GenericComponent } from '../../generic.component';
 import searchResultsPage from '../../configurations/pages/search-results-page.js';
+import { NightCenterService } from 'src/services/night-center.service';
+import { NightCenterRequest } from 'src/transport/night-center.request';
 
 @Component({
   selector: 'searchResultsPage',
-  providers: [EventService],
+  providers: [EventService, NightCenterService],
   templateUrl: './search-results-page.component.html',
   styleUrls: ['./search-results-page.component.scss'],
   animations: [
@@ -39,6 +41,7 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
 
   constructor(
     private eventService: EventService,
+    private nightCenterService: NightCenterService,
     private activatedRoute: ActivatedRoute,
     ) {
       super();
@@ -60,18 +63,18 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
   }
 
   loadPlacesFilters() {
-    this.eventService.fetchEvents(new EventRequest())
+    this.nightCenterService.fetchNightCenters(new NightCenterRequest())
     .subscribe(res => {
       this.results = res.data;
     });
   }
 
-  showNavbar(){
+  showNavbar() {
     this.showFilters = !this.showFilters;
     console.log(this.showFilters);
   }
 
-  onClose(){
+  onClose() {
     this.showFilters = false;
   }
 

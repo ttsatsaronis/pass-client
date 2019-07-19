@@ -4,6 +4,10 @@ export class EventRequest extends GenericRequest {
 
   private priceRange: string;
   private dateRange: string;
+  private nightCenterTypeId: number;
+  private artistId: number;
+  private nightCenterId: number;
+  private musicKindIds: Array<number>;
 
   constructor();
 
@@ -41,5 +45,69 @@ export class EventRequest extends GenericRequest {
    */
   public set $dateRange(value: string) {
     this.dateRange = value;
+  }
+
+  /**
+   * Getter $nightCenterTypeId
+   * @return {number}
+   */
+  public get $nightCenterTypeId(): number {
+    return this.nightCenterTypeId;
+  }
+
+  /**
+   * Setter $nightCenterTypeId
+   * @param {number} value
+   */
+  public set $nightCenterTypeId(value: number) {
+    this.nightCenterTypeId = value;
+  }
+
+  /**
+   * Getter $artistId
+   * @return {number}
+   */
+  public get $artistId(): number {
+    return this.artistId;
+  }
+
+  /**
+   * Setter $artistId
+   * @param {number} value
+   */
+  public set $artistId(value: number) {
+    this.artistId = value;
+  }
+
+  /**
+   * Getter $nightCenterId
+   * @return {number}
+   */
+  public get $nightCenterId(): number {
+    return this.nightCenterId;
+  }
+
+  /**
+   * Setter $nightCenterId
+   * @param {number} value
+   */
+  public set $nightCenterId(value: number) {
+    this.nightCenterId = value;
+  }
+
+  /**
+   * Getter $musicKindIds
+   * @return {Array<number>}
+   */
+  public get $musicKindIds(): Array<number> {
+    return this.musicKindIds;
+  }
+
+  /**
+   * Setter $musicKindIds
+   * @param {Array<number>} value
+   */
+  public set $musicKindIds(value: Array<number>) {
+    this.musicKindIds = value;
   }
 }

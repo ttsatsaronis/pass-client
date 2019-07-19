@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 import globalStyling from '../../globalStyling.js';
 import { GenericComponent } from '../../generic.component';
 import header from '../../configurations/modules/header.js';
@@ -55,7 +55,7 @@ export class HeaderComponent extends GenericComponent implements OnInit {
     this.router.navigate(["/", path]);
   }
 
-  onBlur(){
+  onBlur() {
     if (this.burgerMenu) {
       this.burgerMenu = false;
       this.active = false;

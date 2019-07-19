@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Router } from "@angular/router";
-import { EventService } from 'src/services/event.service.js';
-import { EventRequest } from 'src/transport/event.request.js';
 
 @Component({
   selector: 'slide',

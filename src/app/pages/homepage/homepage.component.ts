@@ -17,7 +17,6 @@ export class HomepageComponent extends GenericComponent implements OnInit {
   deviceInfo: any;
   todayResults: any;
   weekResults: any;
-  monthResults: any;
 
   constructor(
     // private deviceService: DeviceDetectorService,
@@ -39,11 +38,6 @@ export class HomepageComponent extends GenericComponent implements OnInit {
         this.eventService.fetchEvents(req)
           .subscribe(wRes => {
             this.weekResults = wRes.data;
-            req.$dateRange = 'MONTH';
-            this.eventService.fetchEvents(req)
-              .subscribe(mRes => {
-                this.monthResults = mRes.data;
-              });
           });
       });
   }

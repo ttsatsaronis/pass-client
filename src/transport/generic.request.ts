@@ -6,6 +6,7 @@ export class GenericRequest {
   private id: number;
   private tableName: string;
   private active: boolean;
+  private showDetails: boolean;
   private paging: Paging;
   private additionalSort: Array<Sorting>;
 
@@ -94,4 +95,21 @@ export class GenericRequest {
   public set $additionalSort(value: Array<Sorting>) {
     this.additionalSort = value;
   }
+
+  /**
+   * Getter $showDetails
+   * @return {boolean}
+   */
+  public get $showDetails(): boolean {
+    return this.showDetails;
+  }
+
+  /**
+   * Setter $showDetails
+   * @param {boolean} value
+   */
+  public set $showDetails(value: boolean) {
+    this.showDetails = value;
+  }
+
 }

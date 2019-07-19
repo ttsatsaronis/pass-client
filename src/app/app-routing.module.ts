@@ -19,12 +19,12 @@ const routes: Routes = [
   {
     path: 'discover',
     component: SearchResultsPageComponent,
-		data: { load: 'discover' },
+    data: { load: 'discover' },
   },
   {
     path: 'places',
     component: SearchResultsPageComponent,
-		data: { load: 'places' },
+    data: { load: 'places' },
   },
   {
     path: 'eventdetails/:id',
