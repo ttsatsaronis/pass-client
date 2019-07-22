@@ -36,6 +36,8 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
   results: any;
   showFilters: boolean = false;
   screenView: any;
+  totalSize: number;
+  request: EventRequest;
 
   constructor(
     private eventService: EventService,
@@ -53,9 +55,12 @@ export class SearchResultsPageComponent extends GenericComponent implements OnIn
   }
 
   loadDiscoverFilters() {
-    this.eventService.fetchEvents(new EventRequest())
+    this.request =  new EventRequest();
+    this.eventService.fetchEvents(this.request)
     .subscribe(res => {
+      this.totalSize = res.totalSize;
       this.results = res.data;
+      console.log(this.request);
     });
   }
 

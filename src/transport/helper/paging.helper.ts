@@ -1,6 +1,6 @@
 export class Paging {
 
-  private pageSize: number = 20;
+  private pageSize: number = 12;
   private pageNumber: number = 1;
   private orderField: string;
   private orderDirection: string = "desc";

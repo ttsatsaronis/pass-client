@@ -25,6 +25,7 @@ import { ResultsComponent } from './modules/results/results.component';
 import { ImageCarouselComponent } from './modules/image-carousel/image-carousel.component';
 import { CookiePolicyComponent } from './modules/cookie-policy/cookie-policy.component';
 import { CalendarComponent } from './modules/calendar/calendar.component';
+import { PagingComponent } from './modules/paging/paging.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { CalendarComponent } from './modules/calendar/calendar.component';
     ResultsComponent,
     ImageCarouselComponent,
     CalendarComponent,
+    PagingComponent,
 
     //filters
     FiltersComponent,
