@@ -4,6 +4,7 @@ export class EventRequest extends GenericRequest {
 
   private priceRange: string;
   private dateRange: string;
+  private exactDate: Date;
   private nightCenterTypeId: number;
   private artistId: number;
   private nightCenterId: number;
@@ -109,5 +110,21 @@ export class EventRequest extends GenericRequest {
    */
   public set $musicKindIds(value: Array<number>) {
     this.musicKindIds = value;
+  }
+
+  /**
+   * Getter $exactDate
+   * @return {Date}
+   */
+  public get $exactDate(): Date {
+    return this.exactDate;
+  }
+
+  /**
+   * Setter $exactDate
+   * @param {Date} value
+   */
+  public set $exactDate(value: Date) {
+    this.exactDate = value;
   }
 }
