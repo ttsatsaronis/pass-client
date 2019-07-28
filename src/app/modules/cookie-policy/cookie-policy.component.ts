@@ -14,6 +14,6 @@ export class CookiePolicyComponent implements OnInit {
   }
 
   onAcceptCookie(){
-    this.cookiePolicy = localStorage.setItem("cookiePolicy", 'accepted');
+    this.cookiePolicy = localStorage.setItem('cookiePolicy', 'accepted');
   }
 }

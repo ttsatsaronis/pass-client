@@ -20,12 +20,12 @@ export class DropdownComponent {
     this.open = !this.open;
   }
 
-  onSelect(item: string){
+  onSelect(item: string) {
     this.open = !this.open;
     this.selectedItem = item;
   }
 
-  onBlur(){
+  onBlur() {
     if (this.open) {
       this.open = false;
     }

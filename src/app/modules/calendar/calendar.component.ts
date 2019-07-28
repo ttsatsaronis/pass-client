@@ -17,7 +17,7 @@ export class CalendarComponent {
   open: boolean = false;
   day: any;
 
-  days: any = ['Δ','Τ','Τ','Π','Π','Σ','Κ'];
+  days: any = ['Δ', 'Τ', 'Τ', 'Π', 'Π', 'Σ', 'Κ'];
 
   onExpand(){
     this.open = !this.open;

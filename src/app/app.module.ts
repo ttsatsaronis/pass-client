@@ -46,7 +46,7 @@ import { CalendarComponent } from './modules/calendar/calendar.component';
     ImageCarouselComponent,
     CalendarComponent,
 
-    //filters
+    // filters
     FiltersComponent,
     DropdownFilterComponent,
     CheckboxFilterComponent

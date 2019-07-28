@@ -52,7 +52,7 @@ export class HeaderComponent extends GenericComponent implements OnInit {
   }
 
   onNavigate(path: string) {
-    this.router.navigate(["/", path]);
+    this.router.navigate(['/', path]);
   }
 
   onBlur() {

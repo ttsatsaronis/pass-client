@@ -36,7 +36,7 @@ export class CheckboxFilterComponent implements OnInit {
     this.showHideLabel = this.translations.showMoreLabel;
   }
 
-  onSelect(name: string){
+  onSelect(name: string) {
     if (this.data.has(name)) {
       this.data.set(name, !this.data.get(name));
     }

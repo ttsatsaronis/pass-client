@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'slide',
@@ -17,9 +17,8 @@ export class SlideComponent {
     private router: Router
   ) {}
 
-
   onNavigate(path: string) {
-    this.router.navigate(["/", path]);
+    this.router.navigate(['/', path]);
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 import globalStyling from '../../globalStyling.js';
 import { GenericComponent } from '../../generic.component';
 import footer from '../../configurations/modules/footer.js';
@@ -26,7 +26,7 @@ export class FooterComponent extends GenericComponent implements OnInit {
   }
 
   onNavigate(path: string) {
-    this.router.navigate(["/", path]);
+    this.router.navigate(['/', path]);
   }
 
 }
